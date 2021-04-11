@@ -23,6 +23,15 @@ header .nav-toggle .hamburger {
 }
 header .logo {
   order: 2;
+  display: flex;
+  flex-direction: row;
+}
+header .logo .header__first-name {
+  font-weight: 300;
+  padding-right: 0.2em;
+}
+header .logo .header__last-name {
+  font-weight: 700;
 }
 header nav {
   display: flex;
@@ -38,12 +47,28 @@ main {
   width: 100%;
   padding: 0.25em;
 }
-main .main__intro {
+main .main__about-me {
   text-align: center;
 }
-main .main__intro .main__img {
+main .main__about-me .main__img {
   width: 500px;
   object-fit: cover;
+}
+main .main__about-me .main__header {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin: 0.5em 0 0.2em 0;
+}
+main .main__about-me .main__subhead {
+  font-size: 1rem;
+  margin: 0;
+}
+main .main__intro {
+  background-color: #808080;
+  padding: 1em;
+}
+main .main__intro .main__intro--header {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

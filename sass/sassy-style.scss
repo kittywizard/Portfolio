@@ -1,4 +1,5 @@
 $button-bg-color: #fff; //change to whatever the background color ends up being
+$main-intro-bg: #808080;
 
 body {
     margin: 0;
@@ -28,6 +29,17 @@ header {
 
     .logo {
         order: 2;
+        display: flex;
+        flex-direction: row;
+
+        .header__first-name {
+            font-weight: 300;
+            padding-right: 0.2em;
+        }
+
+        .header__last-name {
+            font-weight: 700;
+        }
     }
 
     //everything within the navigation
@@ -47,23 +59,33 @@ main {
     width: 100%;
     padding: 0.25em;
 
-    .main__intro {
+    .main__about-me {
         text-align: center;
 
         .main__img {
             width: 500px;
             object-fit: cover;
-
         }
 
         .main__header {
-
+            font-weight: 600;
+            font-size: 2.5rem;
+            margin: 0.5em 0 0.2em 0;
         }
 
         .main__subhead {
-            
+            font-size: 1rem;
+            margin: 0;
         }
     }
 
+    .main__intro {
+        background-color: $main-intro-bg;
+        padding: 1em;
+
+        .main__intro--header {
+            color: #fff;
+        }
+    }
     
 }
