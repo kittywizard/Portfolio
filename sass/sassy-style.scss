@@ -1,7 +1,69 @@
-
+$button-bg-color: #fff; //change to whatever the background color ends up being
 
 body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5em;
+    padding: 0.25em;
+
+    .nav-toggle {
+        order: 1;
+        border: unset;
+        background-color: $button-bg-color;
+
+        .hamburger {
+            padding: 1em;
+            border-top: 5px solid #ccc;
+            border-bottom: 5px solid #eee;
+        }
+        
+    }
+
+    .logo {
+        order: 2;
+    }
+
+    //everything within the navigation
+    nav {
+        display: flex;
+        flex-direction: row;
+        display: none;
+    
+        .nav__list {
+            list-style: none;
+        }
+    }
+}
+
+main {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0.25em;
+
+    .main__intro {
+        text-align: center;
+
+        .main__img {
+            width: 500px;
+            object-fit: cover;
+
+        }
+
+        .main__header {
+
+        }
+
+        .main__subhead {
+            
+        }
+    }
+
+    
 }
