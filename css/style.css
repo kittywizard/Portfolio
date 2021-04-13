@@ -47,27 +47,28 @@ main {
   width: 100%;
   padding: 0.25em;
 }
-main .main__about-me {
+main .intro__about-me {
   text-align: center;
 }
-main .main__about-me .main__img {
+main .intro__about-me .intro__img {
   width: 500px;
   object-fit: cover;
 }
-main .main__about-me .main__header {
+main .intro__about-me .intro__header {
   font-weight: 600;
   font-size: 2.5rem;
   margin: 0.5em 0 0.2em 0;
 }
-main .main__about-me .main__subhead {
+main .intro__about-me .intro__subhead {
   font-size: 1rem;
   margin: 0;
 }
-main .main__intro {
+main .desc__intro {
   background-color: #808080;
   padding: 1em;
+  margin: 1em 0;
 }
-main .main__intro .main__intro--header {
+main .desc__intro .desc__intro--header {
   color: #fff;
 }
 

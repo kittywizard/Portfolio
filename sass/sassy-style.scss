@@ -59,31 +59,32 @@ main {
     width: 100%;
     padding: 0.25em;
 
-    .main__about-me {
+    .intro__about-me {
         text-align: center;
 
-        .main__img {
+        .intro__img {
             width: 500px;
             object-fit: cover;
         }
 
-        .main__header {
+        .intro__header {
             font-weight: 600;
             font-size: 2.5rem;
             margin: 0.5em 0 0.2em 0;
         }
 
-        .main__subhead {
+        .intro__subhead {
             font-size: 1rem;
             margin: 0;
         }
     }
 
-    .main__intro {
+    .desc__intro {
         background-color: $main-intro-bg;
         padding: 1em;
+        margin: 1em 0;
 
-        .main__intro--header {
+        .desc__intro--header {
             color: #fff;
         }
     }
