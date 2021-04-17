@@ -2,7 +2,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  color: #3b3b3b;
+  color: #b0b0b0;
+  background-color: #3b3b3b;
+}
+
+.show {
+  display: block;
 }
 
 header {
@@ -13,14 +18,19 @@ header {
   padding: 0.25em;
 }
 header .nav-toggle {
-  order: 1;
-  border: unset;
-  background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 header .nav-toggle .hamburger {
-  padding: 1em;
-  border-top: 5px solid #ccc;
-  border-bottom: 5px solid #eee;
+  display: block;
+  background-color: #b0b0b0;
+  margin: 0.1em;
+  padding: 0.1em 0;
+  width: 20px;
+  height: 0.1em;
+}
+header .nav-toggle:hover .hamburger {
+  background-color: gold;
 }
 header .logo {
   order: 2;
@@ -41,6 +51,29 @@ header nav {
 }
 header nav .nav__list {
   list-style: none;
+}
+header nav .nav__item {
+  margin: 2em;
+}
+header nav a {
+  text-decoration: none;
+  color: #b0b0b0;
+  font-size: 2rem;
+}
+header nav a:hover, header nav a:focus {
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+header nav a:hover:after, header nav a:hover:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: 1em;
+  height: 0.2em;
+  bottom: -0.2em;
+  width: 80%;
+  background-color: gold;
 }
 
 /*# sourceMappingURL=style.css.map */
