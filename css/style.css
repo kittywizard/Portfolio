@@ -89,4 +89,44 @@ header nav .nav__link:hover:after, header nav .nav__link:hover:after {
   background-color: gold;
 }
 
+main .main__intro {
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  width: 90%;
+  margin: 0 auto;
+}
+main .main__intro__copy {
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .main__intro__copy--headline {
+  font-size: 2.7rem;
+  margin: 0.2em 0;
+}
+main .main__intro__copy--subhead {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0 auto;
+  background-color: gold;
+  color: #3b3b3b;
+  max-width: fit-content;
+  padding: 1em 2em;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+}
+main .main__intro__img {
+  background-image: url("/svg/me-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-position: 50% 0%;
+  content: "";
+  width: 30%;
+}
+main .main__intro__img:hover {
+  background-image: url("/svg/me-hover_white.svg");
+}
+
 /*# sourceMappingURL=style.css.map */
