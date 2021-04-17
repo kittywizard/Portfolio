@@ -43,44 +43,4 @@ header nav .nav__list {
   list-style: none;
 }
 
-main {
-  margin: 0 auto;
-  width: 100%;
-}
-main .intro__about-me {
-  text-align: center;
-  margin: 0.2em;
-}
-main .intro__about-me .intro__img {
-  width: 70%;
-  object-fit: cover;
-}
-main .intro__about-me .intro__header {
-  font-weight: 600;
-  font-size: 2.3rem;
-  margin: 0.5em 0 0.2em 0;
-}
-main .intro__about-me .intro__subhead {
-  font-size: 1.5rem;
-  background-color: #359cf9;
-  color: #fff;
-  padding: 0.5em 0em;
-  margin: 0.2em;
-}
-main .desc__intro {
-  background-color: #3b3b3b;
-  padding: 1em;
-  margin: 1em 0;
-}
-main .desc__intro .intro__header--headline {
-  color: #359cf9;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border-bottom: 2px solid #b0b0b0;
-  padding-bottom: 0.5em;
-}
-main .desc__intro .intro__header--copy {
-  color: #fff;
-}
-
 /*# sourceMappingURL=style.css.map */
