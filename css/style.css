@@ -10,12 +10,16 @@ body {
   display: block;
 }
 
+.bg-color {
+  background-color: #4b4b4b;
+}
+
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0.5em;
-  padding: 0.25em;
+  align-items: top;
+  padding: 0.75em;
 }
 header .nav-toggle {
   display: flex;
@@ -36,13 +40,20 @@ header .logo {
   order: 2;
   display: flex;
   flex-direction: row;
+  font-size: 1.3rem;
 }
 header .logo .header__first-name {
   font-weight: 300;
   padding-right: 0.2em;
 }
+header .logo .header__first-name:hover {
+  filter: contrast(200%);
+}
 header .logo .header__last-name {
   font-weight: 700;
+}
+header .logo .header__last-name:hover {
+  filter: contrast(200%);
 }
 header nav {
   display: flex;
@@ -55,17 +66,19 @@ header nav .nav__list {
 header nav .nav__item {
   margin: 2em;
 }
-header nav a {
+header nav .nav__link {
   text-decoration: none;
   color: #b0b0b0;
   font-size: 2rem;
+  font-weight: 600;
 }
-header nav a:hover, header nav a:focus {
+header nav .nav__link:hover, header nav .nav__link:focus {
   color: #fff;
   position: relative;
   display: inline-block;
+  font-weight: 700;
 }
-header nav a:hover:after, header nav a:hover:after {
+header nav .nav__link:hover:after, header nav .nav__link:hover:after {
   content: "";
   z-index: -1;
   position: absolute;

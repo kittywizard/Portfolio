@@ -1,5 +1,6 @@
 $button-bg-color: #fff; //change to whatever the background color ends up being
 $main-dark-gray: #3b3b3b;
+$secondary-dark-gray: #4b4b4b;
 $main-light-gray: #b0b0b0;
 $accent-color: gold;
 
@@ -12,16 +13,24 @@ body {
     background-color: $main-dark-gray;
 }
 
-.show {
-    display: block;
+@mixin contrast {
+    &:hover{
+        filter: contrast(200%);
+    }
+        
 }
+
+.show {display: block;}
+
+.bg-color { background-color: $secondary-dark-gray;}
+
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0.5em;
-    padding: 0.25em;
+    align-items: top;
+    padding: 0.75em;
 
     //this creates the basic hamburger menu
     .nav-toggle {
@@ -49,15 +58,19 @@ header {
         order: 2;
         display: flex;
         flex-direction: row;
+        font-size: 1.3rem;
 
         .header__first-name {
             font-weight: 300;
             padding-right: 0.2em;
+            @include contrast;
         }
 
         .header__last-name {
             font-weight: 700;
+            @include contrast;
         }
+
     }
 
     //everything within the navigation
@@ -74,17 +87,18 @@ header {
             margin: 2em;
         }
     
-        & a {
+        & .nav__link {
             text-decoration: none;
             color: $main-light-gray;
             font-size: 2rem;
+            font-weight: 600;
 
             &:hover,
             &:focus {
-                //border-bottom: 3px solid $accent-color;
                 color: $button-bg-color;
                 position: relative;
                 display: inline-block;
+                font-weight: 700;
             }
 
             &:hover:after,
