@@ -19,6 +19,17 @@ body {
     }
 }
 
+@mixin afterEffect {
+    content: '';
+    z-index: -1;
+    position: absolute;
+}
+
+@mixin polygon {
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    background-color: $accent-color;
+}
+
 .show {display: block;}
 
 .bg-color { background-color: $secondary-dark-gray;}
@@ -102,9 +113,7 @@ header {
 
             &:hover:after,
             &:hover:after {
-                content: '';
-                z-index: -1;
-                position: absolute;
+               @include afterEffect;
                 left: 1em;
                 height: .2em;
                 bottom: -0.2em;
@@ -140,12 +149,10 @@ main {
                 font-size: 1.5rem;
                 font-weight: 300;
                 margin: 0 auto;
-                background-color: $accent-color;
                 color: $main-dark-gray;
                 max-width: fit-content;
                 padding: 1em 2em;
-                clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
-            
+                @include polygon;
             }
         }
 
@@ -164,6 +171,36 @@ main {
 
     }
 
+    .main__about {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        &--headline {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin: 0 0 1em 0;
+            position: relative;
+            text-align: center;
+
+            &:after {
+                @include afterEffect;
+                @include polygon;
+                left: 2em;
+                bottom: -0.4em;
+                height: 0.3em;
+                width: 50%;
+            }
+        }
+
+        &--desc {
+            font-size: 1rem;
+            color: $button-bg-color;
+            line-height: 1.3;
+        }
+    }
+    
 
 }
 
