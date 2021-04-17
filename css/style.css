@@ -91,24 +91,24 @@ header nav .nav__link:hover:after, header nav .nav__link:hover:after {
 
 main .main__intro {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   height: 30vh;
   width: 90%;
   margin: 0 auto;
 }
 main .main__intro__copy {
-  width: 60%;
+  width: 50%;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 main .main__intro__copy--headline {
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   margin: 0.2em 0;
 }
 main .main__intro__copy--subhead {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 300;
   margin: 0 auto;
   color: #3b3b3b;
@@ -121,23 +121,24 @@ main .main__intro__img {
   background-image: url("/svg/me-white.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  object-position: 50% 0%;
   content: "";
-  width: 30%;
+  width: 40%;
+  height: 100%;
 }
 main .main__intro__img:hover {
   background-image: url("/svg/me-hover_white.svg");
 }
 main .main__about {
-  width: 60%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 1em auto;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 main .main__about--headline {
   font-size: 1.75rem;
   font-weight: 600;
-  margin: 0 0 1em 0;
+  margin: 0.5em 0 1em 0;
   position: relative;
   text-align: center;
 }
@@ -147,15 +148,22 @@ main .main__about--headline:after {
   position: absolute;
   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
   background-color: gold;
-  left: 2em;
+  left: 4em;
   bottom: -0.4em;
   height: 0.3em;
-  width: 50%;
+  width: 30%;
 }
 main .main__about--desc {
   font-size: 1rem;
   color: #fff;
   line-height: 1.3;
+}
+main .main__projects--headline {
+  font-size: 2.5rem;
+  color: #fff;
+}
+main .main__projects__grid {
+  display: grid;
 }
 
 /*# sourceMappingURL=style.css.map */
