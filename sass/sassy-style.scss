@@ -214,6 +214,13 @@ main {
         
         &__grid {
             display: grid;
+            //need to set up grid for mobile first
+
+            &--img {
+                width: 100px;
+                height: 100px;
+                background: $accent-color;
+            }
         }
     }
 }

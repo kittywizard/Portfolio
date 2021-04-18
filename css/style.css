@@ -165,5 +165,10 @@ main .main__projects--headline {
 main .main__projects__grid {
   display: grid;
 }
+main .main__projects__grid--img {
+  width: 100px;
+  height: 100px;
+  background: gold;
+}
 
 /*# sourceMappingURL=style.css.map */
