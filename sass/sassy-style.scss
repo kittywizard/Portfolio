@@ -232,6 +232,21 @@ main {
                 margin: 0.4em 0 1em 0;
                 text-align: center;
             }
+
+            &--link {
+                text-decoration: none;
+                color: $button-bg-color;
+                font-weight: 700;
+                text-align: center;
+                font-size: 0.75rem;
+                margin: 0;
+
+                &:hover,
+                &:focus {
+                    color: $secondary-dark-gray;
+                    @include polygon;
+                }
+            }
         }
     }
 }

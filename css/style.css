@@ -181,5 +181,18 @@ main .main__projects__grid--desc {
   margin: 0.4em 0 1em 0;
   text-align: center;
 }
+main .main__projects__grid--link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  font-size: 0.75rem;
+  margin: 0;
+}
+main .main__projects__grid--link:hover, main .main__projects__grid--link:focus {
+  color: #4b4b4b;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  background-color: gold;
+}
 
 /*# sourceMappingURL=style.css.map */
