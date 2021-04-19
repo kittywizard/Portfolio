@@ -14,7 +14,7 @@ body {
 }
 
 @mixin contrast {
-    &:hover{
+    &:hover {
         filter: contrast(200%);
     }
 }
@@ -28,6 +28,11 @@ body {
 @mixin polygon {
     clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
     background-color: $accent-color;
+}
+
+@mixin center {
+    text-align: center;
+    text-decoration: none;
 }
 
 .show {display: block;}
@@ -184,7 +189,7 @@ main {
             font-weight: 600;
             margin: 0.5em 0 1em 0;
             position: relative;
-            text-align: center;
+            @include center;
 
             &:after {
                 @include afterEffect;
@@ -221,16 +226,34 @@ main {
                 background: $accent-color;
             }
 
+            &--desc-title,
+            &--desc,
+            &--text-link {
+                @include center;
+            }
+
             &--desc-title {
                 font-size: 1.5rem;
                 margin: 0;
-                text-align: center;
             }
 
             &--desc {
                 font-size: 0.75rem;
                 margin: 0.4em 0 1em 0;
-                text-align: center;
+            }
+
+            &--text-link {
+                color: $button-bg-color;
+                font-weight: 700;
+                letter-spacing: .75px;
+                font-size: 0.75rem;
+                margin: 0;
+
+                &:hover,
+                &:focus {
+                    color: $secondary-dark-gray;
+                    @include polygon;
+                }
             }
         }
     }
