@@ -6,7 +6,7 @@ const links = document.querySelectorAll('.main__projects__grid--link');
 hamburger.addEventListener('click', () => nav.classList.toggle('show'));
 
 links.forEach(link => {
-    link.addEventListener('mouseOver', imageHover); //i don't think this is hover exactly
+    link.addEventListener('click', imageHover); //i don't think this is hover exactly
 });
 
 function imageHover() {

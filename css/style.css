@@ -172,6 +172,9 @@ main .main__projects__grid--img {
   margin: 1em 0 0.75em 0;
   background: gold;
 }
+main .main__projects__grid--link:hover:hover {
+  filter: contrast(200%);
+}
 main .main__projects__grid--desc-title, main .main__projects__grid--desc, main .main__projects__grid--text-link {
   text-align: center;
   text-decoration: none;
@@ -195,6 +198,28 @@ main .main__projects__grid--text-link:hover, main .main__projects__grid--text-li
   color: #4b4b4b;
   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
   background-color: gold;
+}
+main .main__contact {
+  width: 90%;
+  margin: 0 auto;
+}
+main .main__contact--icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .main__contact .fas,
+main .main__contact .fab {
+  padding: 0 0.25em;
+  margin-top: 0.5em;
+  font-size: 4rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+main .main__contact .fas:hover,
+main .main__contact .fab:hover {
+  color: gold;
 }
 
 /*# sourceMappingURL=style.css.map */
