@@ -13,6 +13,8 @@ body {
     background-color: $main-dark-gray;
 }
 
+.show { display: block;} //DON'T DELETE - this is for the hamburger menu, dingbat
+
 @mixin contrast {
     &:hover {
         filter: contrast(200%);
@@ -35,21 +37,13 @@ body {
     text-decoration: none;
 }
 
-.show {
-    display: block;
-}
-
-.bg-color {
-    background-color: $secondary-dark-gray;
-}
-
-
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; // this is causing the menu, when it pops up to be in the 'center' and not left aligned. wheee!
     align-items: top;
     padding: 0.75em;
+    margin-bottom: 2.75em;
 
     //this creates the basic hamburger menu
     .nav-toggle {
@@ -96,6 +90,7 @@ header {
     nav {
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
         display: none;
 
         .nav__list {
@@ -138,9 +133,8 @@ main {
     .main__intro {
         display: flex;
         justify-content: space-between;
-        height: 30vh;
         width: 90%;
-        margin: 0 auto;
+        margin: 3em auto;
 
         &__copy {
             width: 50%;
@@ -171,8 +165,7 @@ main {
             background-size: contain;
             content: '';
             width: 40%;
-            height: 100%;
-
+            
             &:hover {
                 background-image: url('/svg/me-hover_white.svg');
             }
