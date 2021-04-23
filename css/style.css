@@ -1,6 +1,7 @@
 /*
 to do list:
     - add some different background to the sections
+    - fix the way the images are displaying at mobile size
     - 
 
 
@@ -102,7 +103,7 @@ main .main__intro {
   display: flex;
   justify-content: space-between;
   width: 90%;
-  margin: 1em auto;
+  margin: 0 auto;
 }
 main .main__intro__copy {
   width: 50%;
@@ -166,42 +167,43 @@ main .main__about--desc {
   color: #fff;
   line-height: 1.3;
 }
-main .main__projects--headline {
+main .main__project--headline {
   font-size: 2.5rem;
   color: #fff;
 }
-main .main__projects__grid {
-  display: grid;
+main .main__project__grid {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
-main .main__projects__grid--img {
-  height: 50vh;
-  margin: 0;
-  object-fit: contain;
+main .main__project__grid--img {
+  object-fit: cover;
   background-color: gold;
 }
-main .main__projects__grid--link:hover:hover {
+main .main__project__grid--link:hover:hover {
   filter: contrast(200%);
 }
-main .main__projects__grid--desc-title, main .main__projects__grid--desc, main .main__projects__grid--text-link {
+main .main__project__grid--desc-title, main .main__project__grid--desc, main .main__project__grid--text-link {
   text-align: center;
   text-decoration: none;
 }
-main .main__projects__grid--desc-title {
+main .main__project__grid--desc-title {
   font-size: 1.5rem;
   margin: 0;
 }
-main .main__projects__grid--desc {
+main .main__project__grid--desc {
   font-size: 0.75rem;
   margin: 0.4em 0 1em 0;
 }
-main .main__projects__grid--text-link {
+main .main__project__grid--text-link {
   color: #fff;
   font-weight: 700;
   letter-spacing: 0.75px;
   font-size: 0.75rem;
   margin: 0;
 }
-main .main__projects__grid--text-link:hover, main .main__projects__grid--text-link:focus {
+main .main__project__grid--text-link:hover, main .main__project__grid--text-link:focus {
   color: #4b4b4b;
   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
   background-color: gold;
