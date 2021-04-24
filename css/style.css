@@ -175,7 +175,8 @@ main .main__projects__grid {
   width: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  gap: 0.3em;
+  grid-template: auto/repeat(2, 1fr);
   justify-content: center;
 }
 main .main__projects__grid--img {

@@ -230,9 +230,10 @@ main {
         }
 
         &__grid {
-            @include margins;
+            @include margins; //includes the 90% width
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            gap: 0.3em;
+            grid-template: auto / repeat(2, 1fr); //rows / columns (need the slash in there)
             justify-content: center;
             
             &--img {
