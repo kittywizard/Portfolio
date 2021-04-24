@@ -222,7 +222,7 @@ main {
         }
     }
 
-    .main__project {
+    .main__projects {
     
         &--headline {
             font-size: 2.5rem;
@@ -231,7 +231,8 @@ main {
 
         &__grid {
             @include margins;
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             justify-content: center;
             
             &--img {
