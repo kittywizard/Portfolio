@@ -180,6 +180,9 @@ main .main__projects__grid {
   justify-content: center;
 }
 main .main__projects__grid--img {
+  width: 50vh;
+  max-height: 200px;
+  max-width: 200px;
   object-fit: cover;
   background-color: gold;
 }

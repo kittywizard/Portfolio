@@ -237,6 +237,9 @@ main {
             justify-content: center;
             
             &--img {
+                width: 50vh;
+                max-height: 200px;
+                max-width: 200px;
                 object-fit: cover;
                 background-color: $accent-color;
             }
