@@ -350,3 +350,38 @@ main {
         }
     }
 }
+
+/* --------- MEDIA QUERY TIME ----------------- */
+
+@media (min-width: 600px) {
+    header {
+        .header__top-bar {
+            flex-direction: row;
+        }
+
+        /* hide the hamburger menu */
+        .nav-toggle {
+            visibility: hidden;
+        }
+
+        nav {
+            display: inline;
+            flex-direction: column;
+            margin: 0.5em 0;
+            justify-content: center;
+
+            .nav__list {
+                
+            }
+
+            .nav__item {
+                margin: 1em 0 1em 0;
+            }
+
+            & .nav__link {
+                font-size: 1rem;
+            }
+        }
+    }
+
+}

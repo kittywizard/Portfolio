@@ -266,4 +266,29 @@ main .main__contact .fab:hover {
   border-bottom: 1px solid gold;
 }
 
+/* --------- MEDIA QUERY TIME ----------------- */
+@media (min-width: 600px) {
+  header {
+    /* hide the hamburger menu */
+  }
+  header .header__top-bar {
+    flex-direction: row;
+  }
+  header .nav-toggle {
+    visibility: hidden;
+  }
+  header nav {
+    display: inline;
+    flex-direction: column;
+    margin: 0.5em 0;
+    justify-content: center;
+  }
+  header nav .nav__item {
+    margin: 1em 0 1em 0;
+  }
+  header nav .nav__link {
+    font-size: 1rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
