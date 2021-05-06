@@ -1,4 +1,4 @@
-$button-bg-color: #fff; 
+$button-bg-color: #fff;
 $main-dark-gray: #3b3b3b;
 $secondary-dark-gray: #4b4b4b;
 $main-light-gray: #b0b0b0;
@@ -15,14 +15,18 @@ to do list:
 
 body {
     margin: 0;
-    padding: 0;
+    //padding: 70px 0 0 0;
     font-family: "Montserrat", sans-serif;
     color: $main-light-gray;
     background-color: $main-dark-gray;
 }
 
 //add in an animation effect?
-.show {display: block;} //DON'T DELETE - this is for the hamburger menu, dingbat
+.show {
+    display: block;
+}
+
+//DON'T DELETE - this is for the hamburger menu, dingbat
 
 @mixin contrast {
     &:hover {
@@ -55,6 +59,13 @@ header {
     padding: 0.75em;
     margin-bottom: 1em;
     background-color: $secondary-dark-gray; //why does this break the hover effect?
+    // position: fixed;
+    // width: 100%;
+    // top: 0;
+    // left: 0;
+    z-index: 1;
+    position: sticky;
+    top: 0;
 
     .header__top-bar {
         display: flex;
@@ -182,7 +193,7 @@ main {
             background-size: contain;
             content: '';
             width: 40%;
-            
+
             &:hover {
                 background-image: url('/svg/me-hover_white.svg');
             }
@@ -214,7 +225,7 @@ main {
             //the polygons don't work w/ the background color declaration. whyyyy
             &:after {
                 @include afterEffect;
-                @include polygon; 
+                @include polygon;
                 left: 4em;
                 bottom: -0.4em;
                 height: 0.3em;
@@ -235,7 +246,7 @@ main {
         // background-color: $secondary-dark-gray;
         // margin: 0 auto;
         // padding: 1em;
-    
+
         &--headline {
             font-size: 2.5rem;
             color: $button-bg-color;
@@ -253,7 +264,7 @@ main {
             gap: 0.3em;
             grid-template: auto / repeat(2, 1fr); //rows / columns (need the slash in there)
             justify-content: center;
-            
+
             &--img {
                 width: 50vh;
                 max-height: 200px;
@@ -263,9 +274,7 @@ main {
             }
 
             &--link:hover {
-                //add some minor effect
-                @include contrast;
-                //probably not that one tho
+                filter: brightness(70%);
             }
 
             &--desc-title,
@@ -331,6 +340,7 @@ main {
     background-color: $secondary-dark-gray;
 
     &__info {
+
         //might not need all these nonsense classes??
         &--copy {
             font-size: 0.75rem;
@@ -341,7 +351,7 @@ main {
         &--link {
             @include center;
             color: $button-bg-color;
-            
+
 
             &:hover {
                 color: $button-bg-color;
@@ -355,33 +365,56 @@ main {
 
 @media (min-width: 600px) {
     header {
-        .header__top-bar {
-            flex-direction: row;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+        nav {
+            margin: 0;
+            flex-direction: column;
+            justify-content: center;
+            display: inline; /*  don't delete this!! otherwise it won't show up lol */
+
+            .nav__list {
+                margin: 0.3em;
+                padding-inline-start: 0; //kills the left margin
+
+                .nav__item {
+                    display: inline; // horizontal UL
+                    padding: 0.5em;
+                }
+
+            }
+
+            & .nav__link {
+                font-size: 1.3rem;
+                font-weight: 300;
+            }
+
+
         }
 
         /* hide the hamburger menu */
         .nav-toggle {
             visibility: hidden;
         }
+    }
 
-        nav {
-            display: inline;
-            flex-direction: column;
-            margin: 0.5em 0;
-            justify-content: center;
+    main {
+        display: grid;
 
-            .nav__list {
-                
+
+        .main__intro {
+    
+            &__img {
+                //width: 60%;
+                min-width: 600px;
+
             }
-
-            .nav__item {
-                margin: 1em 0 1em 0;
-            }
-
-            & .nav__link {
-                font-size: 1rem;
-            }
+    
         }
+
     }
 
 }

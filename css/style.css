@@ -8,7 +8,6 @@ to do list:
 */
 body {
   margin: 0;
-  padding: 0;
   font-family: "Montserrat", sans-serif;
   color: #b0b0b0;
   background-color: #3b3b3b;
@@ -22,6 +21,9 @@ header {
   padding: 0.75em;
   margin-bottom: 1em;
   background-color: #4b4b4b;
+  z-index: 1;
+  position: sticky;
+  top: 0;
 }
 header .header__top-bar {
   display: flex;
@@ -196,8 +198,8 @@ main .main__projects__grid--img {
   object-fit: cover;
   background-color: gold;
 }
-main .main__projects__grid--link:hover:hover {
-  filter: contrast(200%);
+main .main__projects__grid--link:hover {
+  filter: brightness(70%);
 }
 main .main__projects__grid--desc-title, main .main__projects__grid--desc, main .main__projects__grid--text-link {
   text-align: center;
@@ -269,25 +271,40 @@ main .main__contact .fab:hover {
 /* --------- MEDIA QUERY TIME ----------------- */
 @media (min-width: 600px) {
   header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     /* hide the hamburger menu */
   }
-  header .header__top-bar {
-    flex-direction: row;
+  header nav {
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    display: inline;
+    /*  don't delete this!! otherwise it won't show up lol */
+  }
+  header nav .nav__list {
+    margin: 0.3em;
+    padding-inline-start: 0;
+  }
+  header nav .nav__list .nav__item {
+    display: inline;
+    padding: 0.5em;
+  }
+  header nav .nav__link {
+    font-size: 1.3rem;
+    font-weight: 300;
   }
   header .nav-toggle {
     visibility: hidden;
   }
-  header nav {
-    display: inline;
-    flex-direction: column;
-    margin: 0.5em 0;
-    justify-content: center;
+
+  main {
+    display: grid;
   }
-  header nav .nav__item {
-    margin: 1em 0 1em 0;
-  }
-  header nav .nav__link {
-    font-size: 1rem;
+  main .main__intro__img {
+    min-width: 600px;
   }
 }
 
