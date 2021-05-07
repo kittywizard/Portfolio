@@ -294,17 +294,17 @@ main .main__contact .fab:hover {
   }
   header nav .nav__link {
     font-size: 1.3rem;
-    font-weight: 300;
   }
   header .nav-toggle {
     visibility: hidden;
   }
 
-  main {
-    display: grid;
+  main .main__display {
+    display: flex;
+    justify-content: center;
   }
-  main .main__intro__img {
-    min-width: 600px;
+  main .main__projects--headline {
+    visibility: hidden;
   }
 }
 

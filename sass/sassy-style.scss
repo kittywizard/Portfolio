@@ -385,7 +385,6 @@ main {
 
             & .nav__link {
                 font-size: 1.3rem;
-                font-weight: 300;
             }
 
 
@@ -398,17 +397,16 @@ main {
     }
 
     main {
-        display: grid;
+        
+        .main__display {
+            display: flex;
+            justify-content: center;
+        }
 
-
-        .main__intro {
     
-            &__img {
-                //width: 60%;
-                min-width: 600px;
 
-            }
-    
+        .main__projects--headline {
+            visibility: hidden;
         }
 
     }
