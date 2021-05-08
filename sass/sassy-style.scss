@@ -1,59 +1,16 @@
-$button-bg-color: #fff;
-$main-dark-gray: #3b3b3b;
-$secondary-dark-gray: #4b4b4b;
-$main-light-gray: #b0b0b0;
-$accent-color: rgb(255, 215, 0);
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
-/*
-to do list:
-    - add some different background to the sections
-    - fix the way the images are displaying at mobile size
-    - fix the polygon display when the bg color changes
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+
+@import "components/nav";
+@import "components/contact";
+@import "components/header";
+@import "components/projects";
 
 
-*/
-
-body {
-    margin: 0;
-    //padding: 70px 0 0 0;
-    font-family: "Montserrat", sans-serif;
-    color: $main-light-gray;
-    background-color: $main-dark-gray;
-}
-
-//add in an animation effect?
-.show {
-    display: block;
-}
-
-//DON'T DELETE - this is for the hamburger menu, dingbat
-
-@mixin contrast {
-    &:hover {
-        filter: contrast(200%);
-    }
-}
-
-@mixin afterEffect {
-    content: '';
-    z-index: -1;
-    position: absolute;
-}
-
-@mixin polygon {
-    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
-    background-color: $accent-color;
-}
-
-@mixin center {
-    text-align: center;
-    text-decoration: none;
-}
-
-@mixin margins {
-    width: 90%;
-    margin: 0 auto;
-}
 
 header {
     padding: 0.75em;

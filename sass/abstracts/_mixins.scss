@@ -1,0 +1,26 @@
+@mixin contrast {
+    &:hover {
+        filter: contrast(200%);
+    }
+}
+
+@mixin afterEffect {
+    content: '';
+    z-index: -1;
+    position: absolute;
+}
+
+@mixin polygon {
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    background-color: $accent-color;
+}
+
+@mixin center {
+    text-align: center;
+    text-decoration: none;
+}
+
+@mixin margins {
+    width: 90%;
+    margin: 0 auto;
+}
