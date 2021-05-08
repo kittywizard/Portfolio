@@ -1,3 +1,4 @@
+
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
@@ -219,9 +220,8 @@ main {
             justify-content: center;
 
             &--img {
-                width: 50vh;
+                width: 100%;
                 max-height: 200px;
-                max-width: 200px;
                 object-fit: cover;
                 background-color: $accent-color;
             }
@@ -316,7 +316,7 @@ main {
 
 /* --------- MEDIA QUERY TIME ----------------- */
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     header {
         display: flex;
         flex-direction: row;
@@ -355,11 +355,34 @@ main {
 
     main {
         
-        .main__display {
-            display: flex;
-            justify-content: center;
-        }
+        //main_display encompasses both the 'hello' intro section and the projects themselves
+        // .main__display {
+        //     display: flex;
+        //     justify-content: center;
+        // }
 
+        .main__intro {
+            flex-direction: column;
+            align-content: flex-start;
+            justify-content: center;
+
+            &__copy {
+                order: 2;
+                width: 60%;
+            }
+    
+            &__img {
+        
+                background-image: url('/svg/me-white.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                content: '';
+                width: 40%;
+                min-width: 300px;
+                min-height: 300px;
+            }
+    
+        }
     
 
         .main__projects--headline {
