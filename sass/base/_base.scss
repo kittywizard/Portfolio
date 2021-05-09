@@ -1,12 +1,16 @@
 body {
     margin: 0;
     //padding: 70px 0 0 0;
-    font-family: "Montserrat", sans-serif;
-    color: $main-light-gray;
     background-color: $main-dark-gray;
 }
 
 //DON'T DELETE - this is for the hamburger menu, dingbat
 .show {
     display: block;
+}
+
+//changes the outline when tabbing through the document.
+:focus {
+    outline: 2px solid $accent-color;
+    outline-offset: 2px;
 }

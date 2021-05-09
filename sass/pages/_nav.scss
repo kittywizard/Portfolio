@@ -1,0 +1,41 @@
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    display: none;
+    margin: 5em 0;
+
+    .nav__list {
+        list-style: none;
+    }
+
+    .nav__item {
+        margin: 3em 0 1em 0;
+    }
+
+    & .nav__link {
+        text-decoration: none;
+        color: $main-light-gray;
+        font-size: 2rem;
+        font-weight: 600;
+
+        &:hover,
+        &:focus {
+            color: $button-bg-color;
+            position: relative;
+            display: inline-block;
+            font-weight: 700;
+        }
+
+        &:hover:after,
+        &:hover:after {
+            @include afterEffect;
+            left: 1em;
+            height: .2em;
+            bottom: -0.2em;
+            width: 80%;
+            background-color: $accent-color;
+        }
+    }
+}
