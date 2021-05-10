@@ -19,7 +19,7 @@
         width: 2em;
         height: 3px;
 
-        transition: transform 250ms ease-in-out;
+        //transition: transform 250ms ease-in-out;
     }
 
     .hamburger::before,
@@ -41,4 +41,8 @@
             background-color: $accent-color;
         }
     }
+}
+
+.nav-open {
+    transform: translateY(0);
 }

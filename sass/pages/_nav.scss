@@ -3,8 +3,26 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    display: none;
-    margin: 5em 0;
+    
+    margin: 2.75em 0;
+    background-color: $secondary-dark-gray;
+    height: 75vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+
+    //transform: translateX(100%);
+    transform: translateY(-1000px);
+    transition: transform 300ms ease-in-out; //look this up: cubic-bezier(.5, 0, .5, 1)
+
+    /*
+        to do:
+            fix the animation so it runs a little smoother (but doesn't take any time ??)
+    */
 
     .nav__list {
         list-style: none;
@@ -39,18 +57,3 @@ nav {
         }
     }
 }
-
-/*
-potential nav changes/additions courtesy of the video
-
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    
-    transform: translateX(0%);
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
-
-    ^^ adding in a nice effect?
-*/

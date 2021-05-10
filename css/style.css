@@ -87,8 +87,21 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  display: none;
-  margin: 5em 0;
+  margin: 2.75em 0;
+  background-color: #4b4b4b;
+  height: 75vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  transform: translateY(-1000px);
+  transition: transform 300ms ease-in-out;
+  /*
+      to do:
+          fix the animation so it runs a little smoother (but doesn't take any time ??)
+  */
 }
 nav .nav__list {
   list-style: none;
@@ -119,20 +132,6 @@ nav .nav__link:hover:after, nav .nav__link:hover:after {
   background-color: gold;
 }
 
-/*
-potential nav changes/additions courtesy of the video
-
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-
-    transform: translateX(0%);
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
-
-    ^^ adding in a nice effect?
-*/
 main .main__contact {
   width: 90%;
   margin: 0 auto;
@@ -303,7 +302,6 @@ main .main__about__content {
   background-color: #b0b0b0;
   width: 2em;
   height: 3px;
-  transition: transform 250ms ease-in-out;
 }
 .nav-toggle .hamburger::before,
 .nav-toggle .hamburger::after {
@@ -324,8 +322,12 @@ main .main__about__content {
   background-color: gold;
 }
 
+.nav-open {
+  transform: translateY(0);
+}
+
 /* --------- MEDIA QUERY TIME ----------------- */
-/* organize this once it actually worksss */
+/* organize this once it actually works */
 @media (min-width: 800px) {
   header {
     display: flex;
