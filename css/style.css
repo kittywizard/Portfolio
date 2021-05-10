@@ -119,6 +119,20 @@ nav .nav__link:hover:after, nav .nav__link:hover:after {
   background-color: gold;
 }
 
+/*
+potential nav changes/additions courtesy of the video
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    transform: translateX(0%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+
+    ^^ adding in a nice effect?
+*/
 main .main__contact {
   width: 90%;
   margin: 0 auto;
@@ -272,21 +286,46 @@ main .main__about__content {
 .nav-toggle {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 .nav-toggle .hamburger {
   display: block;
-  background-color: #b0b0b0;
-  margin: 0.1em;
-  padding: 0.1em 0;
-  width: 20px;
-  height: 0.1em;
+  position: relative;
 }
-.nav-toggle:hover .hamburger {
+.nav-toggle .hamburger,
+.nav-toggle .hamburger::before,
+.nav-toggle .hamburger::after {
+  background-color: #b0b0b0;
+  width: 2em;
+  height: 3px;
+  transition: transform 250ms ease-in-out;
+}
+.nav-toggle .hamburger::before,
+.nav-toggle .hamburger::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+.nav-toggle .hamburger::before {
+  top: 6px;
+}
+.nav-toggle .hamburger::after {
+  bottom: 6px;
+}
+.nav-toggle:hover .hamburger,
+.nav-toggle:hover .hamburger::before,
+.nav-toggle:hover .hamburger::after {
   background-color: gold;
 }
 
 /* --------- MEDIA QUERY TIME ----------------- */
-/* organize this once it actually works */
+/* organize this once it actually worksss */
 @media (min-width: 800px) {
   header {
     display: flex;

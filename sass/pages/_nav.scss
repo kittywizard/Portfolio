@@ -39,3 +39,18 @@ nav {
         }
     }
 }
+
+/*
+potential nav changes/additions courtesy of the video
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    
+    transform: translateX(0%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+
+    ^^ adding in a nice effect?
+*/
