@@ -71,7 +71,6 @@ main {
 
         }
 
-
 }
 
 
@@ -84,6 +83,17 @@ main {
                         text-align: center;
                         margin: 0.2em;
                 }
+
+                &--link {
+                        @include center;
+                        color: $button-bg-color;
+            
+                        &:hover,
+                        &:focus {
+                            color: $button-bg-color;
+                            border-bottom: 1px solid $accent-color;
+                        }
+                    }
         }
 
-}
+}                       

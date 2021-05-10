@@ -2,14 +2,5 @@
     margin-top: 2em;
     padding: 0.3em;
     background-color: $secondary-dark-gray;
-   
-        &--link {
-            @include center;
-            color: $button-bg-color;
 
-            &:hover {
-                color: $button-bg-color;
-                border-bottom: 1px solid $accent-color;
-            }
-        }
     }
