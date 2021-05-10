@@ -1,0 +1,25 @@
+main {
+    .main__contact {
+        width: 90%;
+        margin: 0 auto;
+
+        &--icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .fas,
+        .fab {
+            padding: 0 0.25em;
+            margin-top: 0.5em;
+            font-size: 4rem;
+            @include center;
+            color: $button-bg-color;
+
+            &:hover {
+                color: $accent-color;
+            }
+        }
+    }
+}

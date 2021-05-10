@@ -1,3 +1,8 @@
+/*
+    INTRO SECTION - 
+    the icon and the 'hello' bit
+
+*/
 main {
 
     .main__about {
@@ -11,27 +16,6 @@ main {
         display: flex;
         justify-content: space-between;
         @include margins;
-
-        &__copy {
-            width: 50%;
-            text-align: center;
-            @include flex-column;
-
-            &--headline {
-                font-size: 2.5rem;
-                margin: 0.2em 0;
-            }
-
-            &--subhead {
-                font-size: 1.3rem;
-                font-weight: 300;
-                margin: 0 auto;
-                color: $main-dark-gray;
-                max-width: fit-content;
-                padding: 1em 2em;
-                @include polygon;
-            }
-        }
 
         &__img {
             background-image: url('/svg/me-white.svg');

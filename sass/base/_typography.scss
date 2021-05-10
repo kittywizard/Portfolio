@@ -4,45 +4,86 @@ body {
 }
 
 /* HEADER */
+header {
+        .header__first-name {
+                font-weight: 300;
+                padding-right: 0.2em;
+                @include contrast;
+        }
 
-  .header__first-name {
-          font-weight: 300;
-          padding-right: 0.2em;
-          @include contrast;
-  }
+        .header__last-name {
+                font-weight: 700;
+                @include contrast;
+        }
 
-  .header__last-name {
-          font-weight: 700;
-          @include contrast;
-  }
+}
 
-  /* MAIN - INTRO */
+/* MAIN - INTRO */
 main {
 
         .main__intro {
 
-                 &__copy {
-                         width: 50%;
-                         text-align: center;
+                &__copy {
+                        width: 50%;
+                        text-align: center;
 
-                         &--headline {
-                                 font-size: 2.5rem;
-                                 margin: 0.2em 0;
-                         }
+                        &--headline {
+                                font-size: 2.5rem;
+                                margin: 0.2em 0;
+                        }
 
-                         &--subhead {
-                                 font-size: 1.3rem;
-                                 font-weight: 300;
-                                 margin: 0 auto;
-                                 color: $main-dark-gray;
-                                 max-width: fit-content;
-                                 padding: 1em 2em;
-                                 @include polygon;
-                         }
-                 }
+                        &--subhead {
+                                font-size: 1.3rem;
+                                font-weight: 300;
+                                margin: 0 auto;
+                                color: $main-dark-gray;
+                                max-width: fit-content;
+                                padding: 1em 2em;
+                                @include polygon;
+                        }
+                }
+
+        }
+
+        .main_about {
+                &--headline {
+                        font-size: 1.75rem;
+                        font-weight: 600;
+                        margin: 0.5em 0 1em 0;
+                        position: relative;
+                        @include center;
+
+                        &:after {
+                                @include afterEffect;
+                                @include polygon;
+                                left: 4em;
+                                bottom: -0.4em;
+                                height: 0.3em;
+                                width: 30%;
+                        }
+                }
+
+                &--desc {
+                        font-size: 1rem;
+                        color: $button-bg-color;
+                        line-height: 1.3;
+                    }
 
         }
 
 
 }
-   
+
+
+/* FOOTER */
+.footer {
+        &__info {
+
+                &--copy {
+                        font-size: 0.75rem;
+                        text-align: center;
+                        margin: 0.2em;
+                }
+        }
+
+}
