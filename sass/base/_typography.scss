@@ -111,3 +111,19 @@ main {
         }
 
 }                       
+
+/* MEDIA QUERIES  */
+
+@media (min-width: 800px) {
+
+        main {
+                .main__intro {
+                        &__copy {
+                                &--subhead {
+                                        //fix weird spacing
+                                        padding: 3em 4em;
+                                }
+                        }
+                }
+        }
+}

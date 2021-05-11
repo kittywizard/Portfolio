@@ -104,6 +104,12 @@ main .main__about--desc {
   border-bottom: 1px solid gold;
 }
 
+/* MEDIA QUERIES  */
+@media (min-width: 800px) {
+  main .main__intro__copy--subhead {
+    padding: 3em 4em;
+  }
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -275,11 +281,6 @@ main .main__projects__grid--desc {
     the icon and the 'hello' bit
 
 */
-main .main__about__copy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 main .main__intro {
   display: flex;
   justify-content: space-between;
@@ -309,6 +310,7 @@ main .main__intro__img:hover {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    margin-right: 2em;
   }
   main .main__intro__copy {
     order: 2;
@@ -316,8 +318,8 @@ main .main__intro__img:hover {
   }
   main .main__intro__img {
     width: 80%;
-    min-width: 200px;
-    min-height: 400px;
+    height: 50%;
+    align-self: center;
   }
   main .main__projects--headline {
     visibility: hidden;
@@ -334,6 +336,11 @@ main .main__about {
 main .main__about__content {
   width: 90%;
   margin: 0 auto;
+}
+main .main__about__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (min-width: 800px) {
