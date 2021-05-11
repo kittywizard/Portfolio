@@ -61,6 +61,12 @@ main {
                         position: relative;
                         @include center;
 
+                        &-mod {
+                                font-size: 2rem;
+                                color: $button-bg-color;
+                                margin-bottom: 0.5em;
+                        }
+
                         &:after {
                                 @include afterEffect;
                                 @include polygon;

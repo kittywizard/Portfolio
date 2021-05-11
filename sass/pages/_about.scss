@@ -1,6 +1,6 @@
 main {
     .main__about {
-        width: 100vw;
+        
         margin: 2em auto;
         background-color: $secondary-dark-gray;
         display: flex;
@@ -10,7 +10,7 @@ main {
 
         &__content {
             width: 90%;
-            margin: 1em auto;
+            margin: 0 auto;
         }
     }
 }
