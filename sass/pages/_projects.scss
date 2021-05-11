@@ -2,11 +2,6 @@ main {
 
     .main__projects {
         @include margins; //includes the 90% width
-
-        &--headline {
-            font-size: 2.5rem;
-            color: $button-bg-color;
-        }
         
         &__grid {
             display: grid;

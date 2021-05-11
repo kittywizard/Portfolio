@@ -51,15 +51,18 @@ main .main__intro__copy--subhead {
   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
   background-color: gold;
 }
-main .main_about--headline {
-  font-size: 1.75rem;
+main .main__projects--headline {
+  font-size: 2.5rem;
+  color: #fff;
+}
+main .main__about--headline {
   font-weight: 600;
-  margin: 0.5em 0 1em 0;
+  margin: 1em 0;
   position: relative;
   text-align: center;
   text-decoration: none;
 }
-main .main_about--headline:after {
+main .main__about--headline:after {
   content: "";
   z-index: -1;
   position: absolute;
@@ -70,7 +73,7 @@ main .main_about--headline:after {
   height: 0.3em;
   width: 30%;
 }
-main .main_about--desc {
+main .main__about--desc {
   font-size: 1rem;
   color: #fff;
   line-height: 1.3;
@@ -188,10 +191,6 @@ header .logo {
 main .main__projects {
   width: 90%;
   margin: 0 auto;
-}
-main .main__projects--headline {
-  font-size: 2.5rem;
-  color: #fff;
 }
 main .main__projects__grid {
   display: grid;

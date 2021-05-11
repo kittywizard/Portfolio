@@ -18,6 +18,7 @@ header {
 
 }
 
+
 /* MAIN - INTRO */
 main {
 
@@ -45,11 +46,18 @@ main {
 
         }
 
-        .main_about {
+        .main__projects {
+
                 &--headline {
-                        font-size: 1.75rem;
+                    font-size: 2.5rem;
+                    color: $button-bg-color;
+                }
+        }
+
+        .main__about {
+                &--headline {
                         font-weight: 600;
-                        margin: 0.5em 0 1em 0;
+                        margin: 1em 0;
                         position: relative;
                         @include center;
 
