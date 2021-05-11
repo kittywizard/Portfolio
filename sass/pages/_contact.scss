@@ -23,3 +23,9 @@ main {
         }
     }
 }
+
+@media (min-width: 800px) {
+    .main__contact {
+        max-width: $max-width;
+    }
+}

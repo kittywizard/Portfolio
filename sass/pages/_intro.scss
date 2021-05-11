@@ -31,3 +31,42 @@ main {
 
     }
 }
+
+@media (min-width: 800px) {
+
+        main {
+
+            //main_display encompasses both the 'hello' intro section and the projects themselves
+            .main__display {
+                display: flex;
+                justify-content: center;
+                max-width: $max-width;
+                @include margins;
+            }
+
+            .main__intro {
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+
+                &__copy {
+                    order: 2;
+                    width: 80%;
+                }
+
+                &__img {
+                    width: 80%;
+                    min-width: 200px;
+                    min-height: 400px;
+                }
+
+            }
+
+
+            .main__projects--headline {
+                visibility: hidden;
+            }
+
+        }
+
+    }

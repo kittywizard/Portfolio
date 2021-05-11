@@ -194,6 +194,11 @@ main .main__contact .fab:hover {
   color: gold;
 }
 
+@media (min-width: 800px) {
+  .main__contact {
+    max-width: 1000px;
+  }
+}
 header {
   padding: 0.75em;
   margin-bottom: 1em;
@@ -304,6 +309,32 @@ main .main__intro__img:hover {
   background-image: url("/svg/me-hover_white.svg");
 }
 
+@media (min-width: 800px) {
+  main .main__display {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  main .main__intro {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  main .main__intro__copy {
+    order: 2;
+    width: 80%;
+  }
+  main .main__intro__img {
+    width: 80%;
+    min-width: 200px;
+    min-height: 400px;
+  }
+  main .main__projects--headline {
+    visibility: hidden;
+  }
+}
 main .main__about {
   margin: 2em auto;
   background-color: #4b4b4b;
@@ -317,6 +348,11 @@ main .main__about__content {
   margin: 0 auto;
 }
 
+@media (min-width: 800px) {
+  .main__about__content {
+    max-width: 1000px;
+  }
+}
 .footer {
   margin-top: 2em;
   padding: 0.3em;
@@ -381,32 +417,6 @@ main .main__about__content {
 
 .rotate .hamburger::before {
   transform: rotate(90deg) translateX(-6px);
-}
-
-/* --------- MEDIA QUERY TIME ----------------- */
-/* organize this once it actually works */
-@media (min-width: 800px) {
-  main .main__intro {
-    flex-direction: column;
-    align-content: flex-start;
-    justify-content: center;
-  }
-  main .main__intro__copy {
-    order: 2;
-    width: 60%;
-  }
-  main .main__intro__img {
-    background-image: url("/svg/me-white.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: "";
-    width: 40%;
-    min-width: 300px;
-    min-height: 300px;
-  }
-  main .main__projects--headline {
-    visibility: hidden;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
