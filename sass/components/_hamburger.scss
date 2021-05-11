@@ -48,14 +48,18 @@
 }
 //need to find the correct classes - or add a new one to activate this 
 
-.nav-open .hamburger {
+.rotate {
     transform: rotate(0.625turn);
 }
 
-.nav-open .hamburger::after{
+.rotate:focus {
+    outline: none;
+}
+
+.rotate .hamburger::after {
     opacity: 0;
 }
 
-.nav-open .hamburger::before {
+.rotate .hamburger::before {
     transform: rotate(90deg) translateX(-6px);
 }

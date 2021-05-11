@@ -1,41 +1,40 @@
 main {
 
     .main__projects {
-
-        // width: 100%;
-        // background-color: $secondary-dark-gray;
-        // margin: 0 auto;
-        // padding: 1em;
+        @include margins; //includes the 90% width
 
         &--headline {
             font-size: 2.5rem;
             color: $button-bg-color;
         }
-
-        &__content {
-            width: 90%;
-            margin: 1em auto;
-
-        }
-
+        
         &__grid {
-            @include margins; //includes the 90% width
             display: grid;
-            gap: 0.3em;
-            grid-template: auto / repeat(2, 1fr); //rows / columns (need the slash in there)
-            justify-content: center;
+            gap: 0.5em;
+            grid-template: auto / repeat(auto-fit, minmax(200px, 1fr)); //rows / columns (need the slash in there)
+            max-width: 800px;
+
+            &--link {
+                overflow: hidden;
+                background-color: $accent-color;
+            }
 
             &--img {
                 width: 100%;
                 max-height: 200px;
                 object-fit: cover;
-                background-color: $accent-color;
+                
+                transition: 
+                            transform 750ms cubic-bezier(.5, 0, .5, 1),
+                            opacity 250ms linear;
+
+                &:hover {
+                    transform: scale(1.1);
+                    opacity: .75;
+                }
             }
 
-            &--link:hover {
-                filter: brightness(70%);
-            }
-
+            /* believe all this is unused */
             &--desc-title,
             &--desc,
             &--text-link {

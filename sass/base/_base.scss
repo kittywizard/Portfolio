@@ -1,16 +1,10 @@
 body {
     margin: 0;
-    //padding: 70px 0 0 0;
     background-color: $main-dark-gray;
 }
 
 html {
     scroll-behavior: smooth;
-}
-
-//DON'T DELETE - this is for the hamburger menu, dingbat
-.show {
-    display: block;
 }
 
 //changes the outline when tabbing through the document.

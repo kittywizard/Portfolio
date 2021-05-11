@@ -12,6 +12,7 @@ navLinks.forEach(link => {
 
 function closeNav() {
     nav.classList.toggle('nav-open');
+    hamburger.classList.toggle('rotate');
 }
 
 //need to create the hover effect
