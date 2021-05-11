@@ -11,12 +11,13 @@ main {
 
             &--link {
                 overflow: hidden;
-                background-color: $accent-color;
+                background-color: $main-light-gray;
+                max-height: 200px;
+                max-width: 200px;
             }
 
             &--img {
                 width: 100%;
-                max-height: 200px;
                 object-fit: cover;
                 
                 transition: 

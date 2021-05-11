@@ -245,11 +245,12 @@ main .main__projects__grid {
 }
 main .main__projects__grid--link {
   overflow: hidden;
-  background-color: gold;
+  background-color: #b0b0b0;
+  max-height: 200px;
+  max-width: 200px;
 }
 main .main__projects__grid--img {
   width: 100%;
-  max-height: 200px;
   object-fit: cover;
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 }
