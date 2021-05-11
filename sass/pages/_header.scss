@@ -20,3 +20,19 @@ header {
         font-size: 1.3rem;
     }
 }
+
+@media (min-width: 800px) {
+
+     header {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+
+
+         /* hide the hamburger menu */
+         .nav-toggle {
+             visibility: hidden;
+         }
+     }
+}

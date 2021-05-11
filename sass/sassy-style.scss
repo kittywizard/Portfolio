@@ -21,41 +21,6 @@
 /* organize this once it actually works */
 
 @media (min-width: 800px) {
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    
-        nav {
-            margin: 0;
-            flex-direction: column;
-            justify-content: center;
-            display: inline; /*  don't delete this!! otherwise it won't show up lol */
-
-            .nav__list {
-                margin: 0.3em;
-                padding-inline-start: 0; //kills the left margin
-
-                .nav__item {
-                    display: inline; // horizontal UL
-                    padding: 0.5em;
-                }
-
-            }
-
-            & .nav__link {
-                font-size: 1.3rem;
-            }
-
-
-        }
-
-        /* hide the hamburger menu */
-        .nav-toggle {
-            visibility: hidden;
-        }
-    }
 
     main {
         

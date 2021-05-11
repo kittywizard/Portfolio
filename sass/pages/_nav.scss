@@ -17,7 +17,7 @@ nav {
 
     //transform: translateX(100%);
     transform: translateY(-1000px);
-    transition: transform 300ms ease-in-out; //look this up: cubic-bezier(.5, 0, .5, 1)
+    transition: transform 300ms cubic-bezier(.5, 0, .5, 1); //look this up: cubic-bezier(.5, 0, .5, 1)
 
     /*
         to do:
@@ -56,4 +56,35 @@ nav {
             background-color: $accent-color;
         }
     }
+}
+
+@media (min-width: 800px) {
+    nav {
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateY(0);
+        position: sticky;
+        height: 2em;
+        background-color: unset;
+        
+
+        .nav__list {
+            margin: 0.3em;
+            padding-inline-start: 0; //kills the left margin
+
+            .nav__item {
+                display: inline; // horizontal UL
+                padding: 0.5em;
+            }
+
+        }
+
+        & .nav__link {
+            font-size: 1.3rem;
+        }
+
+
+    }
+
 }
