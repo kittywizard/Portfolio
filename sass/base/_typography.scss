@@ -60,6 +60,7 @@ main {
                         margin: 1em 0;
                         position: relative;
                         @include center;
+                        font-size: 2.5rem;
 
                         &-mod {
                                 font-size: 2rem;
