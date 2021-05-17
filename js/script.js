@@ -26,3 +26,14 @@ links.forEach((link, index) => {
     }); 
 });
 
+const toggleBtn = document.getElementById('nav__toggle-btn');
+toggleBtn.addEventListener('click', changeMode);
+
+const lighten = document.getElementById('toggleLight');
+const darken = document.getElementById('toggleDark');
+
+function changeMode() {
+    toggleBtn.classList.toggle('toggled');
+    lighten.classList.toggle('unselected');
+    darken.classList.toggle('unselected');
+}

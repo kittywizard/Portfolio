@@ -1,0 +1,33 @@
+.nav__toggle {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#nav__toggle-btn {
+    background-color: $main-dark-gray;
+    border-radius: 30px;
+    padding: 5px;
+    width: 60px;
+    height: 30px;
+    margin: 15px;
+}
+
+.nav__inner-circle {
+    background-color: $main-light-gray;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translateX(30px);
+    transition: all 250ms;
+}
+
+#nav__toggle-btn.toggled>.nav__inner-circle {
+    transform: translateX(0);
+    background-color: $accent-color;
+}
+
+.unselected {
+    opacity: 0.25;
+}

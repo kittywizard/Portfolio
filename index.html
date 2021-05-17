@@ -16,8 +16,6 @@
     <header id="header">
         <div class="header__top-bar">
             <div class="logo">
-                <i class="fas fa-sun header__icon" id="toggleLight"></i>
-                <i class="fas fa-moon header__icon" id="toggleDark"></i>
                 <div class="header__first-name">marleigh </div>
                 <div class="header__last-name">morgan</div>
             </div>
@@ -27,6 +25,13 @@
         </div>
         <nav class="nav">
             <ul class="nav__list">
+                <li class="nav__item nav__toggle">
+                    <i class="fas fa-sun header__icon unselected" id="toggleLight"></i>
+                    <div id="nav__toggle-btn">
+                        <div class="nav__inner-circle"></div>
+                    </div>
+                    <i class="fas fa-moon header__icon" id="toggleDark"></i>
+                </li>
                 <!-- <li class="nav__item"><a href="#home" class="nav__link">home</a></li> -->
                 <li class="nav__item"><a href="#work" class="nav__link">work</a></li>
                 <li class="nav__item"><a href="#about" class="nav__link">about</a></li>

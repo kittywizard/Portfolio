@@ -429,4 +429,38 @@ main .main__about__copy {
   transform: rotate(90deg) translateX(-6px);
 }
 
+.nav__toggle {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#nav__toggle-btn {
+  background-color: #3b3b3b;
+  border-radius: 30px;
+  padding: 5px;
+  width: 60px;
+  height: 30px;
+  margin: 15px;
+}
+
+.nav__inner-circle {
+  background-color: #b0b0b0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translateX(30px);
+  transition: all 250ms;
+}
+
+#nav__toggle-btn.toggled > .nav__inner-circle {
+  transform: translateX(0);
+  background-color: gold;
+}
+
+.unselected {
+  opacity: 0.25;
+}
+
 /*# sourceMappingURL=style.css.map */
