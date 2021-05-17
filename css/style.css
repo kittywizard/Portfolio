@@ -250,7 +250,7 @@ main .main__projects {
 main .main__projects__grid {
   display: grid;
   gap: 0.5em;
-  grid-template: auto/repeat(auto-fit, minmax(200px, 1fr));
+  grid-template: repeat(2, 1fr)/repeat(auto-fit, minmax(200px, 1fr));
   max-width: 800px;
 }
 main .main__projects__grid--link {

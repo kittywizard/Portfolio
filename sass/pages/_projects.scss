@@ -6,7 +6,7 @@ main {
         &__grid {
             display: grid;
             gap: 0.5em;
-            grid-template: auto / repeat(auto-fit, minmax(200px, 1fr)); //rows / columns (need the slash in there)
+            grid-template: repeat(2, 1fr) / repeat(auto-fit, minmax(200px, 1fr)); //rows / columns (need the slash in there)
             max-width: 800px;
 
             &--link {
