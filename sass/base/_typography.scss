@@ -7,12 +7,18 @@ body {
 header {
         .header__first-name {
                 font-weight: 300;
-                padding-right: 0.2em;
+                padding: 0 0.2em;
                 @include contrast;
         }
 
         .header__last-name {
                 font-weight: 700;
+                @include contrast;
+        }
+
+        /* center this vertically */
+        .header__icon {
+                
                 @include contrast;
         }
 
