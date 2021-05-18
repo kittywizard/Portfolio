@@ -1,6 +1,7 @@
 //click the hamburger, get a menu
 const hamburger = document.getElementById('hamburger-menu');
 const nav = document.querySelector('.nav');
+const main = document.querySelector("main");
 hamburger.addEventListener('click', closeNav); // for the menu to work
 
 //close the navigation when you click any of the links
@@ -17,7 +18,6 @@ function closeNav() {
 //need to create the hover effect
 const links = document.querySelectorAll('.main__projects__grid--link');
 const desc = document.querySelectorAll('.main__projects__grid--desc');
-console.log(links)
 links.forEach((link, index) => {
     link.addEventListener('click', () => {
 
@@ -36,4 +36,11 @@ function changeMode() {
     toggleBtn.classList.toggle('toggled');
     lighten.classList.toggle('unselected');
     darken.classList.toggle('unselected');
+
+    //need to reassign css colors
+    //probably should remove color functionality from main classes
+    let lightBg = 'var(--primary-bg-light)';
+
+    main.style.backgroundColor = lightBg;
+    
 }
