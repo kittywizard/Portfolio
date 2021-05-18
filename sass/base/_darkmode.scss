@@ -1,0 +1,91 @@
+body {
+    background-color: $main-dark-gray;
+    color: $main-light-gray;
+}
+
+header, 
+nav, 
+.main__about, 
+.footer {
+    background-color: $secondary-dark-gray;
+}
+
+nav {
+    & .nav__link {
+        color: $main-light-gray;
+        &:hover,
+        &:focus {
+            color: $button-bg-color;
+        }
+    }
+}
+
+.nav-toggle {
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after,
+    .nav__inner-circle {
+        background-color: $main-light-gray;
+    }
+}
+
+#nav__toggle-btn {
+    background-color: $main-dark-gray;
+}
+
+main {
+    .main__intro {
+        &--subhead {
+            color: $main-dark-gray;
+        }
+    }
+
+    .main__projects {
+        &--headline {
+            color: $button-bg-color;
+        }
+    }
+
+    .main__about {
+
+        &--headline {
+            &-mod {
+                color: $button-bg-color;
+            }
+        }
+
+        &--desc {
+            color: $button-bg-color;
+        }
+    }
+
+    .main__projects {
+        &--grid {
+            &--link {
+                background-color: $main-light-gray;
+            }
+
+            &--desc {
+                background-color: $secondary-dark-gray;
+            }
+        }
+    }
+
+    .main__contact {
+        .fas,
+        .fab {
+            background-color: $button-bg-color;
+        }
+    }
+}
+
+.footer {
+
+    &__info {
+        &--link,
+        &--link:hover,
+        &--link:focus {
+            color: $button-bg-color;
+        }
+    }
+}
