@@ -18,9 +18,9 @@ html {
 :root {
   --primary-bg-light: #e6e6e6;
   --secondary-bg-light: #d6d6d6;
-  --main-dark-gray: #3b3b3b;
+  --primary-dark-gray: #3b3b3b;
   --secondary-dark-gray: #4b4b4b;
-  --main-light-gray: #b0b0b0;
+  --primary-light-gray: #b0b0b0;
   --accent-color: $accent-color;
 }
 
@@ -452,61 +452,43 @@ main .main__about__copy {
   opacity: 0.25;
 }
 
-body {
-  background-color: #3b3b3b;
-  color: #b0b0b0;
+.dark_primary-bg {
+  background-color: var(--primary-dark-gray);
 }
 
-header,
-nav,
-.main__about,
-.footer {
-  background-color: #4b4b4b;
+.dark_secondary-bg {
+  background-color: var(--secondary-dark-gray);
 }
 
-nav .nav__link {
-  color: #b0b0b0;
+.dark_tertiary-bg {
+  background-color: var(--primary-light-gray);
 }
+
+.dark_primary-font {
+  color: var(--primary-light-gray);
+}
+
+.dark_secondary-font {
+  color: var(--primary-bg-light);
+}
+
+.dark_tertiary-font {
+  color: var(--primary-dark-gray);
+}
+
+.dark_white-font {
+  color: #fff;
+}
+
 nav .nav__link:hover, nav .nav__link:focus {
   color: #fff;
 }
 
-.nav-toggle .hamburger,
-.nav-toggle .hamburger::before,
-.nav-toggle .hamburger::after,
-.nav-toggle .nav__inner-circle {
-  background-color: #b0b0b0;
-}
-
-#nav__toggle-btn {
-  background-color: #3b3b3b;
-}
-
-main .main__intro--subhead {
-  color: #3b3b3b;
-}
-main .main__projects--headline {
-  color: #fff;
-}
-main .main__about--headline-mod {
-  color: #fff;
-}
-main .main__about--desc {
-  color: #fff;
-}
 main .main__projects--grid--link {
   background-color: #b0b0b0;
 }
 main .main__projects--grid--desc {
   background-color: #4b4b4b;
-}
-main .main__contact .fas,
-main .main__contact .fab {
-  background-color: #fff;
-}
-
-.footer__info--link, .footer__info--link:hover, .footer__info--link:focus {
-  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -39,8 +39,5 @@ function changeMode() {
 
     //need to reassign css colors
     //probably should remove color functionality from main classes
-    let lightBg = 'var(--primary-bg-light)';
-
-    main.style.backgroundColor = lightBg;
     
 }
