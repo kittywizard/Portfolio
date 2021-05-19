@@ -497,4 +497,24 @@ main .main__projects--grid--desc {
   background-color: var(--primary-light-gray);
 }
 
+.light_primary-bg {
+  background-color: var(--primary-bg-light);
+}
+
+.light_secondary-bg {
+  background-color: var(--secondary-bg-light);
+}
+
+.light_primary-font {
+  color: var(--primary-dark-gray);
+}
+
+.light_secondary-font {
+  color: var(--secondary-dark-gray);
+}
+
+nav .nav__link:hover, nav .nav__link:focus {
+  color: var(--primary-dark-gray);
+}
+
 /*# sourceMappingURL=style.css.map */
