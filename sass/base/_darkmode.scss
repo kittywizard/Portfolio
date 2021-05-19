@@ -56,3 +56,10 @@ main {
         }
     }
 }
+
+.hamburger,
+.hamburger:before,
+.hamburger:after
+ {
+    background-color: var(--primary-light-gray);
+}

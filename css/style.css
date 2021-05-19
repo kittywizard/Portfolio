@@ -491,4 +491,10 @@ main .main__projects--grid--desc {
   background-color: #4b4b4b;
 }
 
+.hamburger,
+.hamburger:before,
+.hamburger:after {
+  background-color: var(--primary-light-gray);
+}
+
 /*# sourceMappingURL=style.css.map */
