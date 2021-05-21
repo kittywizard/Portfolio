@@ -17,6 +17,9 @@ function closeNav() {
 const nav = document.querySelector('.nav');
 const main = document.querySelector("main");
 const header = document.getElementById('header');
+const body = document.getElementById('body');
+const li = document.querySelectorAll('.nav__item');
+
 
 //need to create the hover effect
 // const links = document.querySelectorAll('.main__projects__grid--link');
@@ -40,14 +43,10 @@ function changeMode() {
     lighten.classList.toggle('unselected');
     darken.classList.toggle('unselected');
     
-    if(lighten.classList.contains('unselected')) {
-
-    } else {
-
-    }
+    switchClass(nav, )
 }
 
 function switchClass(element, classRemove, classAdd) {
-    element.classList.remove(classRemove);
-    element.classList.add(classAdd);
+    element.classList.toggle(classRemove);
+    element.classList.toggle(classAdd);
 }
