@@ -24,40 +24,16 @@ html {
   --accent-color: $accent-color;
 }
 
-.body-bg .body-bg {
-  background-color: var(--primary-dark-gray);
-}
-.body-bg .body-bg header nav .nav__link:hover, .body-bg .body-bg header nav .nav__link:focus {
-  color: var(--primary-dark-gray);
-}
-.body-bg .hamburger,
-.body-bg .hamburger:before,
-.body-bg .hamburger:after {
-  background-color: var(--primary-light-gray);
+.default {
+  background-color: pink;
 }
 
-.body-bg-dark .body-bg {
-  background-color: var(--primary-dark-gray);
-}
-.body-bg-dark .body-bg header nav .nav__link:hover, .body-bg-dark .body-bg header nav .nav__link:focus {
-  color: var(--primary-dark-gray);
-}
-.body-bg-dark .hamburger,
-.body-bg-dark .hamburger:before,
-.body-bg-dark .hamburger:after {
-  background-color: var(--primary-light-gray);
+.darkmode .dark {
+  background-color: #999;
 }
 
-.body-bg-light .body-bg {
-  background-color: #495600;
-}
-.body-bg-light .body-bg header nav .nav__link:hover, .body-bg-light .body-bg header nav .nav__link:focus {
-  color: #495600;
-}
-.body-bg-light .hamburger,
-.body-bg-light .hamburger:before,
-.body-bg-light .hamburger:after {
-  background-color: var(--primary-light-gray);
+.lightmode .dark {
+  background-color: #ccc;
 }
 
 body {
@@ -531,26 +507,6 @@ main .main__projects--grid--desc {
 .hamburger:before,
 .hamburger:after {
   background-color: var(--primary-light-gray);
-}
-
-.light_primary-bg {
-  background-color: var(--primary-bg-light);
-}
-
-.light_secondary-bg {
-  background-color: var(--secondary-bg-light);
-}
-
-.light_primary-font {
-  color: var(--primary-dark-gray);
-}
-
-.light_secondary-font {
-  color: var(--secondary-dark-gray);
-}
-
-nav .nav__link:hover, nav .nav__link:focus {
-  color: var(--primary-dark-gray);
 }
 
 /*# sourceMappingURL=style.css.map */

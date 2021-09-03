@@ -35,24 +35,23 @@ const li = document.querySelectorAll('.nav__item');
 
 const toggleBtn = document.getElementById('nav__toggle-btn');
 toggleBtn.addEventListener('click', changeMode);
-let mode = true;
 
 const lighten = document.getElementById('toggleLight');
 const darken = document.getElementById('toggleDark');
 
+console.log(document.body.classList)
+
 function changeMode() {
-    //dark true
-    //light false
-    if(mode) {
-        document.body.classList.remove('body-bg');
-        document.body.classList.add("body-bg-dark");
-        //apply theme with dark parameters
-        mode = false;
+
+    if(document.body.classList.contains('darkmode')) {
+        console.log("light mode is active")
+        document.body.classList.remove('darkmode');
+        document.body.classList.add('lightmode');
+
     } else {
-        //apply theme with light parameters
-        document.body.classList.remove('body-bg');
-        document.body.classList.add("body-bg-light");
-        mode = true;
+        console.log("dark mode is active")
+        document.body.classList.remove('lightmode');
+        document.body.classList.add("darkmode");
     }
 
     //this controls the button itself - makes the moon or sun light up!
