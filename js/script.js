@@ -2,6 +2,7 @@
 const hamburger = document.getElementById('hamburger-menu');
 hamburger.addEventListener('click', closeNav); // for the menu to work
 
+
 //close the navigation when you click any of the links
 const navLinks = document.querySelectorAll('.nav__link');
 navLinks.forEach(link => {
@@ -34,19 +35,35 @@ const li = document.querySelectorAll('.nav__item');
 
 const toggleBtn = document.getElementById('nav__toggle-btn');
 toggleBtn.addEventListener('click', changeMode);
+let mode = true;
 
 const lighten = document.getElementById('toggleLight');
 const darken = document.getElementById('toggleDark');
 
 function changeMode() {
+    //dark true
+    //light false
+    if(mode) {
+        document.body.classList.remove('body-bg');
+        document.body.classList.add("body-bg-dark");
+        //apply theme with dark parameters
+        mode = false;
+    } else {
+        //apply theme with light parameters
+        document.body.classList.remove('body-bg');
+        document.body.classList.add("body-bg-light");
+        mode = true;
+    }
+
+    //this controls the button itself - makes the moon or sun light up!
     toggleBtn.classList.toggle('toggled');
     lighten.classList.toggle('unselected');
     darken.classList.toggle('unselected');
     
-    switchClass(nav, )
+    // switchClass(nav, )
 }
 
-function switchClass(element, classRemove, classAdd) {
-    element.classList.toggle(classRemove);
-    element.classList.toggle(classAdd);
-}
+// function switchClass(element, classRemove, classAdd) {
+//     element.classList.toggle(classRemove);
+//     element.classList.toggle(classAdd);
+// }
