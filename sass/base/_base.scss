@@ -25,7 +25,3 @@ html {
     --primary-light-gray: #b0b0b0;
     --accent-color: $accent-color;
 }
-
-.lightmode {
-    @include themeable(#ccc);
-}
