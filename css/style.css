@@ -24,15 +24,7 @@ html {
   --accent-color: $accent-color;
 }
 
-.default {
-  background-color: pink;
-}
-
-.darkmode .dark {
-  background-color: #999;
-}
-
-.lightmode .dark {
+.lightmode .header__top-bar {
   background-color: #ccc;
 }
 
@@ -464,48 +456,42 @@ main .main__about__copy {
   opacity: 0.25;
 }
 
-.dark_primary-bg {
+.darkmode .header__top-bar {
+  background-color: #999;
+}
+.darkmode .dark_primary-bg {
   background-color: var(--primary-dark-gray);
 }
-
-.dark_secondary-bg {
+.darkmode .dark_secondary-bg {
   background-color: var(--secondary-dark-gray);
 }
-
-.dark_tertiary-bg {
+.darkmode .dark_tertiary-bg {
   background-color: var(--primary-light-gray);
 }
-
-.dark_primary-font {
+.darkmode .dark_primary-font {
   color: var(--primary-light-gray);
 }
-
-.dark_secondary-font {
+.darkmode .dark_secondary-font {
   color: var(--primary-bg-light);
 }
-
-.dark_tertiary-font {
+.darkmode .dark_tertiary-font {
   color: var(--primary-dark-gray);
 }
-
-.dark_white-font {
+.darkmode .dark_white-font {
   color: #fff;
 }
-
-nav .nav__link:hover, nav .nav__link:focus {
+.darkmode nav .nav__link:hover, .darkmode nav .nav__link:focus {
   color: #fff;
 }
-
-main .main__projects--grid--link {
+.darkmode main .main__projects--grid--link {
   background-color: #b0b0b0;
 }
-main .main__projects--grid--desc {
+.darkmode main .main__projects--grid--desc {
   background-color: #4b4b4b;
 }
-
-.hamburger,
-.hamburger:before,
-.hamburger:after {
+.darkmode .hamburger,
+.darkmode .hamburger:before,
+.darkmode .hamburger:after {
   background-color: var(--primary-light-gray);
 }
 

@@ -1,3 +1,7 @@
+.darkmode {
+    @include themeable(#999);
+
+
 .dark_primary-bg {
     background-color: var(--primary-dark-gray);
 }
@@ -57,4 +61,5 @@ main {
 .hamburger:after
  {
     background-color: var(--primary-light-gray);
+}
 }

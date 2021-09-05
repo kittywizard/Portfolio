@@ -38,7 +38,7 @@
 }
 // @mixin themeable($theme-name, $primary, $secondary, $primary-font, $secondary-font) {
 @mixin themeable($primary) {
-    .dark {
+    .header__top-bar {
         background-color: $primary;
     }
 
