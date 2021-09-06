@@ -73,6 +73,10 @@ main .main__intro__copy--subhead {
 }
 main .main__projects--headline {
   font-size: 2.5rem;
+  color: #fff;
+}
+main .main__projects__grid {
+  font-size: 2.5rem;
 }
 main .main__projects__grid--headline {
   font-size: 1rem;
@@ -119,8 +123,10 @@ main .main__about--desc {
 .footer__info--link {
   text-align: center;
   text-decoration: none;
+  color: #fff;
 }
 .footer__info--link:hover, .footer__info--link:focus {
+  color: #fff;
   border-bottom: 1px solid gold;
 }
 
@@ -281,7 +287,13 @@ main .main__projects__grid--img:hover {
   transform: scale(1.1);
   opacity: 0.75;
 }
-
+main .main__projects__grid--desc {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  max-width: 200px;
+}
 
 /*
     INTRO SECTION - 
@@ -458,7 +470,6 @@ main .main__about__copy {
   opacity: 0.25;
 }
 
-
 /* code the modal itself */
 main .main__projects__grid--desc {
   background-color: #4b4b4b;
@@ -495,7 +506,8 @@ main .main__projects__grid--icons .fab {
 }
 main .main__projects__grid--icons .fab:hover:hover {
   filter: contrast(200%);
-=======
+}
+
 .darkmode .header__top-bar {
   background-color: #999;
 }
@@ -533,7 +545,6 @@ main .main__projects__grid--icons .fab:hover:hover {
 .darkmode .hamburger:before,
 .darkmode .hamburger:after {
   background-color: var(--primary-light-gray);
-
 }
 
 /*# sourceMappingURL=style.css.map */
