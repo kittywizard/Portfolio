@@ -37,7 +37,6 @@
     justify-content: center;
 }
 
-// @mixin themeable($theme-name, $primary, $secondary, $primary-font, $secondary-font) {
 @mixin themeable($primary, $secondary, $primary-font, $secondary-font, $white) {
     background-color: $primary;
 
@@ -46,13 +45,6 @@
         
        nav {
            background-color: $secondary;
-        & .nav__link {
-            color: $primary-font;
-            &:hover,
-            &:focus {
-                color: $white;
-            }
-        }
     }
 
 
@@ -107,4 +99,41 @@
 .light_secondary-font {
     color: var(--primary-light-gray);
 }
+}
+
+@mixin theme-typography($primary, $secondary, $primary-font, $secondary-font, $white) {
+    color: $primary-font;
+
+   header {
+    nav {
+        background-color: $secondary;
+     & .nav__link {
+         color: $primary-font;
+         &:hover,
+         &:focus {
+             color: $white;
+         }
+     }
+ }
+   } 
+
+   main {
+       .main__intro {
+           &__copy {
+               &--subhead {
+                   color: $primary;
+               }
+           }
+       }
+   }
+
+   .footer {
+       &__info {
+
+           &--link {
+               color: $white;
+
+           }
+       }
+   }
 }

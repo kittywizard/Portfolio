@@ -58,12 +58,10 @@ console.log(document.body.classList)
 function changeMode() {
 
     if(document.body.classList.contains('darkmode')) {
-        console.log("light mode is active")
         document.body.classList.remove('darkmode');
         document.body.classList.add('lightmode');
 
     } else {
-        console.log("dark mode is active")
         document.body.classList.remove('lightmode');
         document.body.classList.add("darkmode");
     }

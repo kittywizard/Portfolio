@@ -506,18 +506,13 @@ main .main__projects__grid--icons .fab:hover:hover {
 
 .darkmode {
   background-color: var(--primary-dark-gray);
+  color: var(--primary-light-gray);
 }
 .darkmode header {
   background-color: var(--secondary-dark-gray);
 }
 .darkmode header nav {
   background-color: var(--secondary-dark-gray);
-}
-.darkmode header nav .nav__link {
-  color: var(--primary-light-gray);
-}
-.darkmode header nav .nav__link:hover, .darkmode header nav .nav__link:focus {
-  color: #fff;
 }
 .darkmode header .hamburger,
 .darkmode header .hamburger:before,
@@ -552,6 +547,81 @@ main .main__projects__grid--icons .fab:hover:hover {
 }
 .darkmode .light_secondary-font {
   color: var(--primary-light-gray);
+}
+.darkmode header nav {
+  background-color: var(--secondary-dark-gray);
+}
+.darkmode header nav .nav__link {
+  color: var(--primary-light-gray);
+}
+.darkmode header nav .nav__link:hover, .darkmode header nav .nav__link:focus {
+  color: #fff;
+}
+.darkmode main .main__intro__copy--subhead {
+  color: var(--primary-dark-gray);
+}
+.darkmode .footer__info--link {
+  color: #fff;
+}
+
+.lightmode {
+  background-color: "#b4f3f4";
+  color: var(--primary-light-gray);
+}
+.lightmode header {
+  background-color: var(--secondary-dark-gray);
+}
+.lightmode header nav {
+  background-color: var(--secondary-dark-gray);
+}
+.lightmode header .hamburger,
+.lightmode header .hamburger:before,
+.lightmode header .hamburger:after {
+  background-color: var(--primary-light-gray);
+}
+.lightmode main__grid--link {
+  background-color: var(--secondary-dark-gray);
+}
+.lightmode main__grid--desc {
+  background-color: var(--secondary-dark-gray);
+}
+.lightmode main .main__about {
+  background-color: var(--secondary-dark-gray);
+}
+.lightmode main .main__contact .fas,
+.lightmode main .main__contact .fab {
+  color: #fff;
+}
+.lightmode main .main__contact .fas:hover,
+.lightmode main .main__contact .fab:hover {
+  color: gold;
+}
+.lightmode .footer {
+  background-color: var(--secondary-dark-gray);
+}
+.lightmode .light_secondary-bg {
+  background-color: var(--primary-light-gray);
+}
+.lightmode .light_primary-font {
+  color: var(--primary-light-gray);
+}
+.lightmode .light_secondary-font {
+  color: var(--primary-light-gray);
+}
+.lightmode header nav {
+  background-color: var(--secondary-dark-gray);
+}
+.lightmode header nav .nav__link {
+  color: var(--primary-light-gray);
+}
+.lightmode header nav .nav__link:hover, .lightmode header nav .nav__link:focus {
+  color: #fff;
+}
+.lightmode main .main__intro__copy--subhead {
+  color: #f0f999;
+}
+.lightmode .footer__info--link {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
