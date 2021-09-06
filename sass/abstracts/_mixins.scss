@@ -36,40 +36,75 @@
     flex-direction: row;
     justify-content: center;
 }
+
 // @mixin themeable($theme-name, $primary, $secondary, $primary-font, $secondary-font) {
-@mixin themeable($primary) {
-    .header__top-bar {
-        background-color: $primary;
+@mixin themeable($primary, $secondary, $primary-font, $secondary-font, $white) {
+    background-color: $primary;
+
+    header {
+       background-color: $secondary; 
+        
+       nav {
+           background-color: $secondary;
+        & .nav__link {
+            color: $primary-font;
+            &:hover,
+            &:focus {
+                color: $white;
+            }
+        }
     }
 
-//        header nav {
-//             & .nav__link{
-//                 &:hover,
-//                 &:focus {
-//                     color: $primary;
-//                 }
-//             }
-//         }
-//     }
 
-//     .hamburger,
-//     .hamburger:before,
-//     .hamburger:after
-//  {
-//     background-color: var(--primary-light-gray);
-// }
+.hamburger,
+.hamburger:before,
+.hamburger:after {
+    background-color: var(--primary-light-gray);
+}
+    } 
+
+    main {
+
+        &__grid {
+            &--link {
+                background-color: $secondary;
+            }
+
+            &--desc {
+                background-color: $secondary;
+            }
+        }
+
+        .main__about {
+            background-color: $secondary;
+        }
+
+        .main__contact {
+            .fas,
+            .fab {
+                color: $white;
+
+                &:hover {
+                   color:  $accent-color;
+                }
+            }
+        }
+    }
+
+    .footer {
+        background-color: $secondary;
+    }
     
-    // .light_secondary-bg {
-    //     background-color: $secondary;
-    // }
-    
-    // .light_primary-font {
-    //     color: $primary-font;
-    // }
-    
-    // .light_secondary-font {
-    //     color: $secondary-font;
-    // }
-    
-    
+
+.light_secondary-bg {
+    background-color: var(--primary-light-gray);
+}
+
+.light_primary-font {
+    color: var(--primary-light-gray);
+}
+
+.light_secondary-font {
+    color: var(--primary-light-gray);
+}
 }

@@ -24,10 +24,6 @@ html {
   --accent-color: $accent-color;
 }
 
-.lightmode .header__top-bar {
-  background-color: #ccc;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -508,43 +504,54 @@ main .main__projects__grid--icons .fab:hover:hover {
   filter: contrast(200%);
 }
 
-.darkmode .header__top-bar {
-  background-color: #999;
-}
-.darkmode .dark_primary-bg {
+.darkmode {
   background-color: var(--primary-dark-gray);
 }
-.darkmode .dark_secondary-bg {
+.darkmode header {
   background-color: var(--secondary-dark-gray);
 }
-.darkmode .dark_tertiary-bg {
-  background-color: var(--primary-light-gray);
+.darkmode header nav {
+  background-color: var(--secondary-dark-gray);
 }
-.darkmode .dark_primary-font {
+.darkmode header nav .nav__link {
   color: var(--primary-light-gray);
 }
-.darkmode .dark_secondary-font {
-  color: var(--primary-bg-light);
-}
-.darkmode .dark_tertiary-font {
-  color: var(--primary-dark-gray);
-}
-.darkmode .dark_white-font {
+.darkmode header nav .nav__link:hover, .darkmode header nav .nav__link:focus {
   color: #fff;
 }
-.darkmode nav .nav__link:hover, .darkmode nav .nav__link:focus {
-  color: #fff;
-}
-.darkmode main .main__projects--grid--link {
-  background-color: #b0b0b0;
-}
-.darkmode main .main__projects--grid--desc {
-  background-color: #4b4b4b;
-}
-.darkmode .hamburger,
-.darkmode .hamburger:before,
-.darkmode .hamburger:after {
+.darkmode header .hamburger,
+.darkmode header .hamburger:before,
+.darkmode header .hamburger:after {
   background-color: var(--primary-light-gray);
+}
+.darkmode main__grid--link {
+  background-color: var(--secondary-dark-gray);
+}
+.darkmode main__grid--desc {
+  background-color: var(--secondary-dark-gray);
+}
+.darkmode main .main__about {
+  background-color: var(--secondary-dark-gray);
+}
+.darkmode main .main__contact .fas,
+.darkmode main .main__contact .fab {
+  color: #fff;
+}
+.darkmode main .main__contact .fas:hover,
+.darkmode main .main__contact .fab:hover {
+  color: gold;
+}
+.darkmode .footer {
+  background-color: var(--secondary-dark-gray);
+}
+.darkmode .light_secondary-bg {
+  background-color: var(--primary-light-gray);
+}
+.darkmode .light_primary-font {
+  color: var(--primary-light-gray);
+}
+.darkmode .light_secondary-font {
+  color: var(--primary-light-gray);
 }
 
 /*# sourceMappingURL=style.css.map */
