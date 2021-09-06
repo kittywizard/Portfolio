@@ -29,16 +29,6 @@ main {
                     opacity: .75;
                 }
             }
-
-            &--desc {
-                background-color: $secondary-dark-gray;
-                position: relative;
-                top: 0px;
-                left: 0px;
-                z-index: 1;
-                max-width: 200px;
-
-            }
             
         }
     }

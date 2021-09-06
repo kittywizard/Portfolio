@@ -15,16 +15,24 @@ function closeNav() {
 }
 
 //need to create the hover effect
-const links = document.querySelectorAll('.main__projects__grid--link');
-const desc = document.querySelectorAll('.main__projects__grid--desc');
-console.log(links)
+const links = document.querySelectorAll('.main__projects__grid--link'); //the image itself
+const desc = document.querySelectorAll('.main__projects__grid--desc'); // the description modal
 links.forEach((link, index) => {
     link.addEventListener('click', () => {
 
-       desc[index].classList.toggle('hidden');
-       links[index].classList.add('absolute');
+       desc[index].classList.toggle('hidden'); // base.scss display: none;
+       links[index].classList.toggle('hidden');
     }); 
 });
+
+desc.forEach((modal, index) => {
+    modal.addEventListener('click', () => {
+
+        desc[index].classList.toggle('hidden'); // base.scss display: none;
+        links[index].classList.toggle('hidden');
+    });
+});
+
 
 const toggleBtn = document.getElementById('nav__toggle-btn');
 toggleBtn.addEventListener('click', changeMode);

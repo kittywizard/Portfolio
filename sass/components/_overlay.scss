@@ -1,0 +1,19 @@
+/* code the modal itself */
+main {
+    .main_projects {
+        &__grid {
+            &--desc {
+                background-color: $secondary-dark-gray;
+                position: relative;
+                top: 0px;
+                left: 0px;
+                z-index: 1;
+                max-width: 200px;
+            }
+        }
+    }
+}
+
+.absolute {
+    position: absolute;
+}

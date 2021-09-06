@@ -274,14 +274,6 @@ main .main__projects__grid--img:hover {
   transform: scale(1.1);
   opacity: 0.75;
 }
-main .main__projects__grid--desc {
-  background-color: #4b4b4b;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  z-index: 1;
-  max-width: 200px;
-}
 
 /*
     INTRO SECTION - 
@@ -461,6 +453,20 @@ main .main__about__copy {
 
 .unselected {
   opacity: 0.25;
+}
+
+/* code the modal itself */
+main .main_projects__grid--desc {
+  background-color: #4b4b4b;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  max-width: 200px;
+}
+
+.absolute {
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */
