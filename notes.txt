@@ -1,0 +1,7 @@
+Notes: 
+
+- Apply darkmode class to body by default, which will include the mixin with all the dark mode colors
+- Have the event listener check to see if document.body.classList.contains('darkmode')
+- Remove / add class based on result
+
+- Set default dark mode on the website - use mixin for the body w/ current dark mode css

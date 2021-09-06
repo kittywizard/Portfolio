@@ -15,7 +15,6 @@ main {
             margin-top: 0.5em;
             font-size: 4rem;
             @include center;
-            color: $button-bg-color;
 
             &:hover {
                 color: $accent-color;

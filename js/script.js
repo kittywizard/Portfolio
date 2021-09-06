@@ -2,8 +2,8 @@
 
 //click the hamburger, get a menu
 const hamburger = document.getElementById('hamburger-menu');
-const nav = document.querySelector('.nav');
 hamburger.addEventListener('click', closeNav); // for the menu to work
+
 
 //close the navigation when you click any of the links
 const navLinks = document.querySelectorAll('.nav__link');
@@ -16,6 +16,7 @@ function closeNav() {
     hamburger.classList.toggle('rotate');
 }
 
+
 /* MODAL SECTION  */
 //creates the modal click on / off 
 const links = document.querySelectorAll('.main__projects__grid--link'); //the image itself
@@ -27,7 +28,6 @@ links.forEach((link, index) => {
        links[index].classList.toggle('hidden');
     }); 
 });
-
 desc.forEach((modal, index) => {
     modal.addEventListener('click', () => {
 
@@ -35,6 +35,15 @@ desc.forEach((modal, index) => {
         links[index].classList.toggle('hidden');
     });
 });
+
+//gathering all the necessary elements to change classes on
+//** figure out which ones aren't necessary, later */
+const nav = document.querySelector('.nav');
+const main = document.querySelector("main");
+const header = document.getElementById('header');
+const body = document.getElementById('body');
+const li = document.querySelectorAll('.nav__item');
+
 
 /* DARK/LIGHT MODE TOGGLE */
 
@@ -44,8 +53,30 @@ toggleBtn.addEventListener('click', changeMode);
 const lighten = document.getElementById('toggleLight');
 const darken = document.getElementById('toggleDark');
 
+console.log(document.body.classList)
+
 function changeMode() {
+
+    if(document.body.classList.contains('darkmode')) {
+        console.log("light mode is active")
+        document.body.classList.remove('darkmode');
+        document.body.classList.add('lightmode');
+
+    } else {
+        console.log("dark mode is active")
+        document.body.classList.remove('lightmode');
+        document.body.classList.add("darkmode");
+    }
+
+    //this controls the button itself - makes the moon or sun light up!
     toggleBtn.classList.toggle('toggled');
     lighten.classList.toggle('unselected');
     darken.classList.toggle('unselected');
+    
+    // switchClass(nav, )
 }
+
+// function switchClass(element, classRemove, classAdd) {
+//     element.classList.toggle(classRemove);
+//     element.classList.toggle(classAdd);
+// }
