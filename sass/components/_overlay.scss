@@ -1,0 +1,46 @@
+/* code the modal itself */
+main {
+    .main__projects {
+        &__grid {
+            &--desc {
+                background-color: $secondary-dark-gray;
+                position: relative;
+                top: 0px;
+                left: 0px;
+                z-index: 1;
+                max-width: 200px;
+
+                &-header {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: stretch;
+
+                    .fas {
+                        margin: 0.5em;
+
+                        &:hover {
+                            @include contrast;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            &--icons {
+                @include center;
+                display: flex;
+                justify-content: space-around;
+                margin-top: 1.5em;
+
+                .fab {
+                    color: $accent-color;
+                
+                    &:hover {
+                        @include contrast;
+                    }
+                }
+            }
+        }
+    }
+}

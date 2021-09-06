@@ -74,6 +74,14 @@ main .main__intro__copy--subhead {
 main .main__projects--headline {
   font-size: 2.5rem;
 }
+main .main__projects__grid--headline {
+  font-size: 1rem;
+  margin: 0.5em 1em;
+}
+main .main__projects__grid--description {
+  font-size: 0.75rem;
+  margin: 0.5em 1em;
+}
 main .main__about--headline {
   font-weight: 600;
   margin: 1em 0;
@@ -273,13 +281,7 @@ main .main__projects__grid--img:hover {
   transform: scale(1.1);
   opacity: 0.75;
 }
-main .main__projects__grid--desc {
-  position: relative;
-  top: 0px;
-  left: 0px;
-  z-index: 1;
-  max-width: 200px;
-}
+
 
 /*
     INTRO SECTION - 
@@ -456,6 +458,44 @@ main .main__about__copy {
   opacity: 0.25;
 }
 
+
+/* code the modal itself */
+main .main__projects__grid--desc {
+  background-color: #4b4b4b;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  max-width: 200px;
+}
+main .main__projects__grid--desc-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+main .main__projects__grid--desc-header .fas {
+  margin: 0.5em;
+}
+main .main__projects__grid--desc-header .fas:hover {
+  cursor: pointer;
+}
+main .main__projects__grid--desc-header .fas:hover:hover {
+  filter: contrast(200%);
+}
+main .main__projects__grid--icons {
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5em;
+}
+main .main__projects__grid--icons .fab {
+  color: gold;
+}
+main .main__projects__grid--icons .fab:hover:hover {
+  filter: contrast(200%);
+=======
 .darkmode .header__top-bar {
   background-color: #999;
 }
@@ -493,6 +533,7 @@ main .main__about__copy {
 .darkmode .hamburger:before,
 .darkmode .hamburger:after {
   background-color: var(--primary-light-gray);
+
 }
 
 /*# sourceMappingURL=style.css.map */

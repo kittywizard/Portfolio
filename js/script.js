@@ -1,3 +1,5 @@
+/* NAV SECTION */ 
+
 //click the hamburger, get a menu
 const hamburger = document.getElementById('hamburger-menu');
 hamburger.addEventListener('click', closeNav); // for the menu to work
@@ -14,6 +16,26 @@ function closeNav() {
     hamburger.classList.toggle('rotate');
 }
 
+
+/* MODAL SECTION  */
+//creates the modal click on / off 
+const links = document.querySelectorAll('.main__projects__grid--link'); //the image itself
+const desc = document.querySelectorAll('.main__projects__grid--desc'); // the description modal
+links.forEach((link, index) => {
+    link.addEventListener('click', () => {
+
+       desc[index].classList.toggle('hidden'); // base.scss display: none;
+       links[index].classList.toggle('hidden');
+    }); 
+});
+desc.forEach((modal, index) => {
+    modal.addEventListener('click', () => {
+
+        desc[index].classList.toggle('hidden'); // base.scss display: none;
+        links[index].classList.toggle('hidden');
+    });
+});
+
 //gathering all the necessary elements to change classes on
 //** figure out which ones aren't necessary, later */
 const nav = document.querySelector('.nav');
@@ -23,16 +45,7 @@ const body = document.getElementById('body');
 const li = document.querySelectorAll('.nav__item');
 
 
-//need to create the hover effect
-// const links = document.querySelectorAll('.main__projects__grid--link');
-// const desc = document.querySelectorAll('.main__projects__grid--desc');
-// links.forEach((link, index) => {
-//     link.addEventListener('click', () => {
-
-//        desc[index].classList.toggle('hidden');
-//        links[index].classList.add('absolute');
-//     }); 
-// });
+/* DARK/LIGHT MODE TOGGLE */
 
 const toggleBtn = document.getElementById('nav__toggle-btn');
 toggleBtn.addEventListener('click', changeMode);
