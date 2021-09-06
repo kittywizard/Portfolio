@@ -1,4 +1,4 @@
 .lightmode {
-    @include themeable("#b4f3f4", var(--secondary-dark-gray), var(--primary-light-gray), var(--secondary-bg-light), $button-bg-color);
-    @include theme-typography(#f0f999, var(--secondary-dark-gray), var(--primary-light-gray), var(--secondary-bg-light), $button-bg-color);
+    @include themeable($primary-bg-light, $secondary-bg-light, $main-dark-gray, $secondary-bg-light, $button-bg-color);
+    @include theme-typography($main-dark-gray, $main-light-gray, var(--primary-light-gray), $secondary-dark-gray, $main-dark-gray);
 }
