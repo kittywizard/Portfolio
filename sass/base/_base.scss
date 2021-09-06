@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    background-color: $main-dark-gray;
 }
 
 html {
@@ -16,4 +15,18 @@ html {
 .hidden {
     display: none;
 
+}
+
+:root {
+    --primary-bg-light: #e6e6e6;
+    --secondary-bg-light: #d6d6d6;
+
+    --primary-dark-gray: #3b3b3b;
+    --secondary-dark-gray: #4b4b4b;
+    --primary-light-gray: #b0b0b0;
+    --accent-color: $accent-color;
+}
+
+.lightmode {
+    @include themeable(#ccc);
 }

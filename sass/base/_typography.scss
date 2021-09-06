@@ -1,6 +1,5 @@
 body {
         font-family: $font, sans-serif;
-        color: $main-light-gray;
 }
 
 /* HEADER */
@@ -18,7 +17,7 @@ header {
 
         /* center this vertically */
         .header__icon {
-                
+
                 @include contrast;
         }
 
@@ -43,7 +42,6 @@ main {
                                 font-size: 1.3rem;
                                 font-weight: 300;
                                 margin: 0 auto;
-                                color: $main-dark-gray;
                                 max-width: fit-content;
                                 padding: 1em 2em;
                                 @include polygon;
@@ -55,8 +53,25 @@ main {
         .main__projects {
 
                 &--headline {
+
+                        font-size: 2.5rem;
+                        color: $button-bg-color;
+                }
+
+                &__grid {
+                        &--headline {
+                                font-size: 1rem;
+                                margin: 0.5em 1em;
+                        }
+
+                        &--description {
+                                font-size: 0.75rem;
+                                margin: 0.5em 1em;
+                        }
+
+
                     font-size: 2.5rem;
-                    color: $button-bg-color;
+
                 }
         }
 
@@ -70,7 +85,6 @@ main {
 
                         &-mod {
                                 font-size: 2rem;
-                                color: $button-bg-color;
                                 margin-bottom: 0.5em;
                         }
 
@@ -86,9 +100,8 @@ main {
 
                 &--desc {
                         font-size: 1rem;
-                        color: $button-bg-color;
                         line-height: 1.3;
-                    }
+                }
 
         }
 
@@ -108,16 +121,17 @@ main {
                 &--link {
                         @include center;
                         color: $button-bg-color;
-            
+
                         &:hover,
                         &:focus {
-                            color: $button-bg-color;
-                            border-bottom: 1px solid $accent-color;
+                                color: $button-bg-color;
+                                border-bottom: 1px solid $accent-color;
+
                         }
-                    }
+                }
         }
 
-}                       
+}
 
 /* MEDIA QUERIES  */
 
