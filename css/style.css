@@ -456,7 +456,7 @@ main .main__about__copy {
 }
 
 /* code the modal itself */
-main .main_projects__grid--desc {
+main .main__projects__grid--desc {
   background-color: #4b4b4b;
   position: relative;
   top: 0px;
@@ -464,9 +464,14 @@ main .main_projects__grid--desc {
   z-index: 1;
   max-width: 200px;
 }
-
-.absolute {
-  position: absolute;
+main .main__projects__grid--icons {
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+}
+main .main__projects__grid--icons .fab {
+  color: gold;
 }
 
 /*# sourceMappingURL=style.css.map */

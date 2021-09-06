@@ -1,6 +1,6 @@
 /* code the modal itself */
 main {
-    .main_projects {
+    .main__projects {
         &__grid {
             &--desc {
                 background-color: $secondary-dark-gray;
@@ -9,11 +9,19 @@ main {
                 left: 0px;
                 z-index: 1;
                 max-width: 200px;
+
+            }
+
+            &--icons {
+                @include center;
+                display: flex;
+                justify-content: space-around;
+
+                .fab {
+                    color: $accent-color;
+                
+                }
             }
         }
     }
-}
-
-.absolute {
-    position: absolute;
 }

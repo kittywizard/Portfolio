@@ -1,3 +1,5 @@
+/* NAV SECTION */ 
+
 //click the hamburger, get a menu
 const hamburger = document.getElementById('hamburger-menu');
 const nav = document.querySelector('.nav');
@@ -14,7 +16,8 @@ function closeNav() {
     hamburger.classList.toggle('rotate');
 }
 
-//need to create the hover effect
+/* MODAL SECTION  */
+//creates the modal click on / off 
 const links = document.querySelectorAll('.main__projects__grid--link'); //the image itself
 const desc = document.querySelectorAll('.main__projects__grid--desc'); // the description modal
 links.forEach((link, index) => {
@@ -33,6 +36,7 @@ desc.forEach((modal, index) => {
     });
 });
 
+/* DARK/LIGHT MODE TOGGLE */
 
 const toggleBtn = document.getElementById('nav__toggle-btn');
 toggleBtn.addEventListener('click', changeMode);
