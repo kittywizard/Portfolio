@@ -465,6 +465,25 @@ main .main__about__copy {
   opacity: 0.25;
 }
 
+@media (min-width: 800px) {
+  #nav__toggle-btn {
+    height: 15px;
+    width: 30px;
+    margin: 5px;
+    padding: 3px;
+  }
+
+  .nav__inner-circle {
+    width: 15px;
+    height: 15px;
+    transform: translateX(15px);
+  }
+
+  .nav__toggle {
+    margin: 1em 0 0.5em 0;
+    display: inline-block;
+  }
+}
 /* code the modal itself */
 main .main__projects__grid--desc {
   background-color: #4b4b4b;
@@ -512,6 +531,12 @@ main .main__projects__grid--icons .fab:hover:hover {
 }
 .darkmode header nav {
   background-color: var(--secondary-dark-gray);
+}
+.darkmode header nav #nav__toggle-btn {
+  background: var(--primary-light-gray);
+}
+.darkmode header nav .nav__inner-circle {
+  background-color: var(--primary-dark-gray);
 }
 .darkmode header .hamburger,
 .darkmode header .hamburger:before,
@@ -572,6 +597,12 @@ main .main__projects__grid--icons .fab:hover:hover {
 }
 .lightmode header nav {
   background-color: #d6d6d6;
+}
+.lightmode header nav #nav__toggle-btn {
+  background: #3b3b3b;
+}
+.lightmode header nav .nav__inner-circle {
+  background-color: #e6e6e6;
 }
 .lightmode header .hamburger,
 .lightmode header .hamburger:before,

@@ -30,6 +30,23 @@
     opacity: 0.25;
 }
 
-@media (min-width: 800px) {
-    //fix the absolute shit show that is the desktop layout of this button
+@media (min-width: 800px) { 
+
+   #nav__toggle-btn {
+       height: 15px;
+       width: 30px;
+       margin: 5px;
+       padding: 3px;
+   }
+
+   .nav__inner-circle {
+       width: 15px;
+       height: 15px;
+       transform: translateX(15px);
+   }
+
+   .nav__toggle {
+        margin: 1em 0 0.5em 0;
+        display: inline-block;
+}
 }

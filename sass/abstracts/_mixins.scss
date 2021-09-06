@@ -45,6 +45,14 @@
         
        nav {
            background-color: $secondary;
+
+           #nav__toggle-btn {
+            background: $primary-font;
+           }
+
+           .nav__inner-circle {
+               background-color: $primary;
+           }
     }
 
 
