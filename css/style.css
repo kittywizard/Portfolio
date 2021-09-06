@@ -24,10 +24,6 @@ html {
   --accent-color: $accent-color;
 }
 
-.lightmode .header__top-bar {
-  background-color: #ccc;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -456,42 +452,48 @@ main .main__about__copy {
   opacity: 0.25;
 }
 
-.darkmode .header__top-bar {
-  background-color: #999;
-}
-.darkmode .dark_primary-bg {
+.dark_primary-bg {
   background-color: var(--primary-dark-gray);
 }
-.darkmode .dark_secondary-bg {
+
+.dark_secondary-bg {
   background-color: var(--secondary-dark-gray);
 }
-.darkmode .dark_tertiary-bg {
+
+.dark_tertiary-bg {
   background-color: var(--primary-light-gray);
 }
-.darkmode .dark_primary-font {
+
+.dark_primary-font {
   color: var(--primary-light-gray);
 }
-.darkmode .dark_secondary-font {
+
+.dark_secondary-font {
   color: var(--primary-bg-light);
 }
-.darkmode .dark_tertiary-font {
+
+.dark_tertiary-font {
   color: var(--primary-dark-gray);
 }
-.darkmode .dark_white-font {
+
+.dark_white-font {
   color: #fff;
 }
-.darkmode nav .nav__link:hover, .darkmode nav .nav__link:focus {
+
+nav .nav__link:hover, nav .nav__link:focus {
   color: #fff;
 }
-.darkmode main .main__projects--grid--link {
+
+main .main__projects--grid--link {
   background-color: #b0b0b0;
 }
-.darkmode main .main__projects--grid--desc {
+main .main__projects--grid--desc {
   background-color: #4b4b4b;
 }
-.darkmode .hamburger,
-.darkmode .hamburger:before,
-.darkmode .hamburger:after {
+
+.hamburger,
+.hamburger:before,
+.hamburger:after {
   background-color: var(--primary-light-gray);
 }
 
