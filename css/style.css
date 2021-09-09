@@ -481,7 +481,7 @@ main .main__about__copy {
 
   .nav__toggle {
     margin: 1em 0 0.5em 0;
-    display: inline-block;
+    display: flex;
   }
 }
 /* code the modal itself */
