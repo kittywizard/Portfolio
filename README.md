@@ -1,5 +1,5 @@
 # Portfolio
 
-Personal portfolio of Marleigh Morgan (kittywizard)
+Personal web development portfolio of Marleigh Morgan (kittywizard)
 
 Website can be found online at http://marleighmorgan.com
