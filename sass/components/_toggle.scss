@@ -32,6 +32,8 @@
 
 @media (min-width: 800px) { 
 
+    
+
    #nav__toggle-btn {
        height: 15px;
        width: 30px;
@@ -48,5 +50,6 @@
    .nav__toggle {
         margin: 1em 0 0.5em 0;
         display: flex;
+        justify-content: flex-start; /* reset because its set as center normally */
     }
 }
