@@ -81,6 +81,17 @@ main .main__projects__grid--description {
   font-size: 0.75rem;
   margin: 0.5em 1em;
 }
+main .main__projects__grid--overlay-link {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+main .main__projects__grid--overlay-link:hover, main .main__projects__grid--overlay-link:focus {
+  color: #fff;
+  border-bottom: 1px solid gold;
+}
 main .main__about--headline {
   font-weight: 600;
   margin: 1em 0;
@@ -272,13 +283,16 @@ main .main__projects__grid--link {
   max-width: 200px;
 }
 main .main__projects__grid--img {
-  width: 100%;
+  max-height: 200px;
   object-fit: cover;
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 }
 main .main__projects__grid--img:hover {
   transform: scale(1.1);
   opacity: 0.75;
+}
+main .main__projects__grid--overlay-link {
+  padding-top: 0.7em;
 }
 main .main__projects__grid--desc {
   position: relative;
@@ -486,7 +500,7 @@ main .main__about__copy {
 }
 /* code the modal itself */
 main .main__projects__grid--desc {
-  background-color: #4b4b4b;
+  background-color: rgba(75, 75, 75, 0.8);
   position: relative;
   top: 0px;
   left: 0px;
@@ -500,7 +514,7 @@ main .main__projects__grid--desc-header {
   align-items: stretch;
 }
 main .main__projects__grid--desc-header .fas {
-  margin: 0.5em;
+  margin: 0.2em 0.2em 0.2em 0.5em;
 }
 main .main__projects__grid--desc-header .fas:hover {
   cursor: pointer;
@@ -513,13 +527,19 @@ main .main__projects__grid--icons {
   text-decoration: none;
   display: flex;
   justify-content: space-around;
-  margin-top: 1.5em;
+  align-items: flex-end;
 }
 main .main__projects__grid--icons .fab {
   color: gold;
+  max-height: 30px;
+  padding: 0.1em;
 }
 main .main__projects__grid--icons .fab:hover:hover {
   filter: contrast(200%);
+}
+
+.overlay {
+  opacity: 0.3;
 }
 
 .darkmode {

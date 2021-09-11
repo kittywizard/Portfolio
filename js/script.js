@@ -36,7 +36,6 @@ desc.forEach((modal, index) => {
     });
 });
 
-//gathering all the necessary elements to change classes on
 //** figure out which ones aren't necessary, later */
 const nav = document.querySelector('.nav');
 const main = document.querySelector("main");

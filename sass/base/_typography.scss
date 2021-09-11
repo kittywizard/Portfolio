@@ -70,7 +70,22 @@ main {
                         }
 
 
-                    font-size: 2.5rem;
+                        &--overlay-link {
+                                @include center;
+                                color: $button-bg-color;
+                                font-weight: 600;
+                                font-size: 0.75rem;
+
+        
+                                &:hover,
+                                &:focus {
+                                        color: $button-bg-color;
+                                        border-bottom: 1px solid $accent-color;
+        
+                                }   
+                        }
+
+                        font-size: 2.5rem;
 
                 }
         }
