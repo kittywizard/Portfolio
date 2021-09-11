@@ -371,6 +371,7 @@ main .main__about__copy {
 @media (min-width: 800px) {
   .main__about__content {
     max-width: 1000px;
+    flex-direction: row;
   }
 }
 /* 
