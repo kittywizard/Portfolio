@@ -64,10 +64,12 @@ nav {
         .nav__list {
             margin: 0.3em;
             padding-inline-start: 0; //kills the left margin
+            display: flex;
 
             .nav__item {
                 display: inline; // horizontal UL
                 padding: 0.5em;
+                margin: 1em 0 1em 0;
             }
 
         }
