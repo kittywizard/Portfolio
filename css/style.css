@@ -371,17 +371,11 @@ main .main__about__copy {
 @media (min-width: 800px) {
   .main__about__content {
     max-width: 1000px;
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
-/* 
-
-    TO DO:
-    fix the spacing at the top of the section so it matches the bottom
-    or reduce the spacing between this and the contact info
-
-
-*/
 .footer {
   margin-top: 2em;
   padding: 0.3em;

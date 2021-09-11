@@ -22,15 +22,9 @@ main {
 
     .main__about__content {
         max-width: $max-width;
+        // remove this if you add a consider amount of content
+        display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
 }
-
-/* 
-
-    TO DO:
-    fix the spacing at the top of the section so it matches the bottom
-    or reduce the spacing between this and the contact info
-
-
-*/
