@@ -186,10 +186,12 @@ nav .nav__link:hover:after, nav .nav__link:hover:after {
   nav .nav__list {
     margin: 0.3em;
     padding-inline-start: 0;
+    display: flex;
   }
   nav .nav__list .nav__item {
     display: inline;
     padding: 0.5em;
+    margin: 1em 0 1em 0;
   }
   nav .nav__link {
     font-size: 1.3rem;
@@ -476,7 +478,7 @@ main .main__about__copy {
   }
 
   .nav__toggle {
-    margin: 1em 0 0.5em 0;
+    margin: 1em 1em 1em 0;
     display: flex;
     justify-content: flex-start;
     /* reset because its set as center normally */
