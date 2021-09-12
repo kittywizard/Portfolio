@@ -1,11 +1,3 @@
-:root {
-  --primary-bg-light: #e6e6e6;
-  --secondary-bg-light: #d6d6d6;
-  --primary-dark-gray: #3b3b3b;
-  --secondary-dark-gray: #4b4b4b;
-  --primary-light-gray: #b0b0b0;
-}
-
 body {
   margin: 0;
 }
@@ -538,34 +530,34 @@ main .main__projects__grid--icons .fab:hover:hover {
 }
 
 .darkmode {
-  background-color: var(--primary-dark-gray);
-  color: var(--primary-light-gray);
+  background-color: #3b3b3b;
+  color: #d6d6d6;
 }
 .darkmode header {
-  background-color: var(--secondary-dark-gray);
+  background-color: #4b4b4b;
 }
 .darkmode header nav {
-  background-color: var(--secondary-dark-gray);
+  background-color: #4b4b4b;
 }
 .darkmode header nav #nav__toggle-btn {
-  background: var(--primary-light-gray);
+  background: #d6d6d6;
 }
 .darkmode header nav .nav__inner-circle {
-  background-color: var(--primary-dark-gray);
+  background-color: #3b3b3b;
 }
 .darkmode header .hamburger,
 .darkmode header .hamburger:before,
 .darkmode header .hamburger:after {
-  background-color: var(--primary-light-gray);
+  background-color: #d6d6d6;
 }
 .darkmode main__grid--link {
-  background-color: var(--secondary-dark-gray);
+  background-color: #4b4b4b;
 }
 .darkmode main__grid--desc {
-  background-color: var(--secondary-dark-gray);
+  background-color: #4b4b4b;
 }
 .darkmode main .main__about {
-  background-color: var(--secondary-dark-gray);
+  background-color: #4b4b4b;
 }
 .darkmode main .main__contact .fas,
 .darkmode main .main__contact .fab {
@@ -576,28 +568,28 @@ main .main__projects__grid--icons .fab:hover:hover {
   color: gold;
 }
 .darkmode .footer {
-  background-color: var(--secondary-dark-gray);
+  background-color: #4b4b4b;
 }
 .darkmode .light_secondary-bg {
-  background-color: var(--primary-light-gray);
+  background-color: #d6d6d6;
 }
 .darkmode .light_primary-font {
-  color: var(--primary-light-gray);
+  color: #d6d6d6;
 }
 .darkmode .light_secondary-font {
-  color: var(--primary-light-gray);
+  color: #d6d6d6;
 }
 .darkmode header nav {
-  background-color: var(--secondary-dark-gray);
+  background-color: #4b4b4b;
 }
 .darkmode header nav .nav__link {
-  color: var(--primary-light-gray);
+  color: #d6d6d6;
 }
 .darkmode header nav .nav__link:hover, .darkmode header nav .nav__link:focus {
   color: #fff;
 }
 .darkmode main .main__intro__copy--subhead {
-  color: var(--primary-dark-gray);
+  color: #3b3b3b;
 }
 .darkmode .footer__info--link {
   color: #fff;
@@ -605,7 +597,7 @@ main .main__projects__grid--icons .fab:hover:hover {
 
 .lightmode {
   background-color: #e6e6e6;
-  color: var(--primary-light-gray);
+  color: #d6d6d6;
 }
 .lightmode header {
   background-color: #d6d6d6;
@@ -622,7 +614,7 @@ main .main__projects__grid--icons .fab:hover:hover {
 .lightmode header .hamburger,
 .lightmode header .hamburger:before,
 .lightmode header .hamburger:after {
-  background-color: var(--primary-light-gray);
+  background-color: #d6d6d6;
 }
 .lightmode main__grid--link {
   background-color: #d6d6d6;
@@ -645,19 +637,19 @@ main .main__projects__grid--icons .fab:hover:hover {
   background-color: #d6d6d6;
 }
 .lightmode .light_secondary-bg {
-  background-color: var(--primary-light-gray);
+  background-color: #d6d6d6;
 }
 .lightmode .light_primary-font {
-  color: var(--primary-light-gray);
+  color: #d6d6d6;
 }
 .lightmode .light_secondary-font {
-  color: var(--primary-light-gray);
+  color: #d6d6d6;
 }
 .lightmode header nav {
   background-color: #b0b0b0;
 }
 .lightmode header nav .nav__link {
-  color: var(--primary-light-gray);
+  color: #d6d6d6;
 }
 .lightmode header nav .nav__link:hover, .lightmode header nav .nav__link:focus {
   color: #3b3b3b;

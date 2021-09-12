@@ -1,4 +1,4 @@
 .darkmode {
-    @include themeable(var(--primary-dark-gray), var(--secondary-dark-gray), var(--primary-light-gray), var(--secondary-bg-light), $button-bg-color);
-    @include theme-typography(var(--primary-dark-gray), var(--secondary-dark-gray), var(--primary-light-gray), var(--secondary-bg-light), $button-bg-color);
+    @include themeable($main-dark-gray, $secondary-dark-gray, $secondary-bg-light, $secondary-bg-light, $white);
+    @include theme-typography($main-dark-gray, $secondary-dark-gray, $secondary-bg-light, $secondary-bg-light, $white);
 }

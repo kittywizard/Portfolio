@@ -55,7 +55,7 @@ main {
                 &--headline {
 
                         font-size: 2.5rem;
-                        color: $button-bg-color;
+                        color: $white;
                 }
 
                 &__grid {
@@ -72,14 +72,14 @@ main {
 
                         &--overlay-link {
                                 @include center;
-                                color: $button-bg-color;
+                                color: $white;
                                 font-weight: 600;
                                 font-size: 0.75rem;
 
         
                                 &:hover,
                                 &:focus {
-                                        color: $button-bg-color;
+                                        color: $white;
                                         border-bottom: 1px solid $accent-color;
         
                                 }   
@@ -135,11 +135,11 @@ main {
 
                 &--link {
                         @include center;
-                        color: $button-bg-color;
+                        color: $white;
 
                         &:hover,
                         &:focus {
-                                color: $button-bg-color;
+                                color: $white;
                                 border-bottom: 1px solid $accent-color;
 
                         }

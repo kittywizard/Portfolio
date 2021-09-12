@@ -59,7 +59,7 @@
 .hamburger,
 .hamburger:before,
 .hamburger:after {
-    background-color: var(--primary-light-gray);
+    background-color: $secondary-bg-light;
 }
     } 
 
@@ -97,15 +97,15 @@
     
 
 .light_secondary-bg {
-    background-color: var(--primary-light-gray);
+    background-color: $secondary-bg-light;
 }
 
 .light_primary-font {
-    color: var(--primary-light-gray);
+    color: $secondary-bg-light;
 }
 
 .light_secondary-font {
-    color: var(--primary-light-gray);
+    color: $secondary-bg-light;
 }
 }
 
