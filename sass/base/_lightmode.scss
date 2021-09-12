@@ -1,4 +1,7 @@
 .lightmode {
-    @include themeable($primary-bg-light, $secondary-bg-light, $main-dark-gray, $secondary-bg-light, $white);
-    @include theme-typography($main-dark-gray, $main-light-gray, $secondary-bg-light, $secondary-dark-gray, $main-dark-gray);
+    @include themeable($secondary-bg-light, $main-light-gray, $main-dark-gray, $secondary-dark-gray, $white);
+    @include theme-typography($main-dark-gray, $secondary-dark-gray, $main-dark-gray, $secondary-dark-gray, $white);
 }
+
+//@mixin themeable($primary, $secondary, $primary-font, $secondary-font, $white)
+//@mixin theme-typography($primary, $secondary, $primary-font, $secondary-font, $white) {

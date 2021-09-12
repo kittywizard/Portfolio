@@ -579,9 +579,6 @@ main .main__projects__grid--icons .fab:hover:hover {
 .darkmode .light_secondary-font {
   color: #d6d6d6;
 }
-.darkmode header nav {
-  background-color: #4b4b4b;
-}
 .darkmode header nav .nav__link {
   color: #d6d6d6;
 }
@@ -596,20 +593,20 @@ main .main__projects__grid--icons .fab:hover:hover {
 }
 
 .lightmode {
-  background-color: #e6e6e6;
-  color: #d6d6d6;
+  background-color: #d6d6d6;
+  color: #3b3b3b;
 }
 .lightmode header {
-  background-color: #d6d6d6;
+  background-color: #b0b0b0;
 }
 .lightmode header nav {
-  background-color: #d6d6d6;
+  background-color: #b0b0b0;
 }
 .lightmode header nav #nav__toggle-btn {
   background: #3b3b3b;
 }
 .lightmode header nav .nav__inner-circle {
-  background-color: #e6e6e6;
+  background-color: #d6d6d6;
 }
 .lightmode header .hamburger,
 .lightmode header .hamburger:before,
@@ -617,13 +614,13 @@ main .main__projects__grid--icons .fab:hover:hover {
   background-color: #d6d6d6;
 }
 .lightmode main__grid--link {
-  background-color: #d6d6d6;
+  background-color: #b0b0b0;
 }
 .lightmode main__grid--desc {
-  background-color: #d6d6d6;
+  background-color: #b0b0b0;
 }
 .lightmode main .main__about {
-  background-color: #d6d6d6;
+  background-color: #b0b0b0;
 }
 .lightmode main .main__contact .fas,
 .lightmode main .main__contact .fab {
@@ -634,7 +631,7 @@ main .main__projects__grid--icons .fab:hover:hover {
   color: gold;
 }
 .lightmode .footer {
-  background-color: #d6d6d6;
+  background-color: #b0b0b0;
 }
 .lightmode .light_secondary-bg {
   background-color: #d6d6d6;
@@ -645,20 +642,17 @@ main .main__projects__grid--icons .fab:hover:hover {
 .lightmode .light_secondary-font {
   color: #d6d6d6;
 }
-.lightmode header nav {
-  background-color: #b0b0b0;
-}
 .lightmode header nav .nav__link {
-  color: #d6d6d6;
+  color: #3b3b3b;
 }
 .lightmode header nav .nav__link:hover, .lightmode header nav .nav__link:focus {
-  color: #3b3b3b;
+  color: #fff;
 }
 .lightmode main .main__intro__copy--subhead {
   color: #3b3b3b;
 }
 .lightmode .footer__info--link {
-  color: #3b3b3b;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
