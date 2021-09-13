@@ -37,7 +37,7 @@
     justify-content: center;
 }
 
-@mixin themeable($primary, $secondary, $primary-font, $secondary-font, $white) {
+@mixin themeable($theme-name, $primary, $secondary, $primary-font, $secondary-font, $white) {
     background-color: $primary;
 
     header {
@@ -59,7 +59,13 @@
 .hamburger,
 .hamburger:before,
 .hamburger:after {
-    background-color: $secondary-bg-light;
+
+    @if $theme-name == light {
+        background-color: $primary-font;
+    }
+    @else {
+        background-color: $secondary-bg-light;
+    }
 }
     } 
 

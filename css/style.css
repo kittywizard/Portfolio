@@ -7,7 +7,7 @@ html {
 }
 
 :focus {
-  outline: 2px solid gold;
+  outline: 2px solid #3ba6d7;
   outline-offset: 2px;
 }
 
@@ -56,7 +56,7 @@ main .main__intro__copy--subhead {
   max-width: fit-content;
   padding: 1em 2em;
   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
-  background-color: gold;
+  background-color: #3ba6d7;
 }
 main .main__projects--headline {
   font-size: 2.5rem;
@@ -82,7 +82,7 @@ main .main__projects__grid--overlay-link {
 }
 main .main__projects__grid--overlay-link:hover, main .main__projects__grid--overlay-link:focus {
   color: #fff;
-  border-bottom: 1px solid gold;
+  border-bottom: 1px solid #3ba6d7;
 }
 main .main__about--headline {
   font-weight: 600;
@@ -101,7 +101,7 @@ main .main__about--headline:after {
   z-index: -1;
   position: absolute;
   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
-  background-color: gold;
+  background-color: #3ba6d7;
   left: 4em;
   bottom: -0.4em;
   height: 0.3em;
@@ -125,7 +125,7 @@ main .main__about--desc {
 }
 .footer__info--link:hover, .footer__info--link:focus {
   color: #fff;
-  border-bottom: 1px solid gold;
+  border-bottom: 1px solid #3ba6d7;
 }
 
 /* MEDIA QUERIES  */
@@ -173,7 +173,7 @@ nav .nav__link:hover:after, nav .nav__link:hover:after {
   height: 0.2em;
   bottom: -0.2em;
   width: 80%;
-  background-color: gold;
+  background-color: #3ba6d7;
 }
 
 @media (min-width: 800px) {
@@ -219,7 +219,7 @@ main .main__contact .fab {
 }
 main .main__contact .fas:hover,
 main .main__contact .fab:hover {
-  color: gold;
+  color: #3ba6d7;
 }
 
 @media (min-width: 800px) {
@@ -409,7 +409,7 @@ main .main__about__copy {
 .nav-toggle:hover .hamburger,
 .nav-toggle:hover .hamburger::before,
 .nav-toggle:hover .hamburger::after {
-  background-color: gold;
+  background-color: #3ba6d7;
 }
 
 .nav-open {
@@ -457,7 +457,7 @@ main .main__about__copy {
 
 #nav__toggle-btn.toggled > .nav__inner-circle {
   transform: translateX(0);
-  background-color: gold;
+  background-color: #3ba6d7;
 }
 
 .unselected {
@@ -516,7 +516,7 @@ main .main__projects__grid--icons {
   align-items: flex-end;
 }
 main .main__projects__grid--icons .fab {
-  color: gold;
+  color: #3ba6d7;
   max-height: 30px;
   padding: 0.1em;
 }
@@ -564,7 +564,7 @@ main .main__projects__grid--icons .fab:hover:hover {
 }
 .darkmode main .main__contact .fas:hover,
 .darkmode main .main__contact .fab:hover {
-  color: gold;
+  color: #3ba6d7;
 }
 .darkmode .footer {
   background-color: #4b4b4b;
@@ -592,34 +592,34 @@ main .main__projects__grid--icons .fab:hover:hover {
 }
 
 .lightmode {
-  background-color: #d6d6d6;
+  background-color: #f0f0f0;
   color: #3b3b3b;
 }
 .lightmode header {
-  background-color: #b0b0b0;
+  background-color: #d6d6d6;
 }
 .lightmode header nav {
-  background-color: #b0b0b0;
+  background-color: #d6d6d6;
 }
 .lightmode header nav #nav__toggle-btn {
   background: #3b3b3b;
 }
 .lightmode header nav .nav__inner-circle {
-  background-color: #d6d6d6;
+  background-color: #f0f0f0;
 }
 .lightmode header .hamburger,
 .lightmode header .hamburger:before,
 .lightmode header .hamburger:after {
-  background-color: #d6d6d6;
+  background-color: #3b3b3b;
 }
 .lightmode main .main__projects__grid--link {
-  background-color: #b0b0b0;
+  background-color: #d6d6d6;
 }
 .lightmode main .main__projects__grid--desc {
-  background-color: #b0b0b0;
+  background-color: #d6d6d6;
 }
 .lightmode main .main__about {
-  background-color: #b0b0b0;
+  background-color: #d6d6d6;
 }
 .lightmode main .main__contact .fas,
 .lightmode main .main__contact .fab {
@@ -627,10 +627,10 @@ main .main__projects__grid--icons .fab:hover:hover {
 }
 .lightmode main .main__contact .fas:hover,
 .lightmode main .main__contact .fab:hover {
-  color: gold;
+  color: #3ba6d7;
 }
 .lightmode .footer {
-  background-color: #b0b0b0;
+  background-color: #d6d6d6;
 }
 .lightmode .light_secondary-bg {
   background-color: #d6d6d6;

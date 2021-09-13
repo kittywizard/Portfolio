@@ -1,4 +1,4 @@
 .darkmode {
-    @include themeable($main-dark-gray, $secondary-dark-gray, $secondary-bg-light, $secondary-bg-light, $white);
+    @include themeable("dark", $main-dark-gray, $secondary-dark-gray, $secondary-bg-light, $secondary-bg-light, $white);
     @include theme-typography($main-dark-gray, $secondary-dark-gray, $secondary-bg-light, $secondary-bg-light, $white);
 }
