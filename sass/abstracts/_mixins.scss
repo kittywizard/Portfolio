@@ -65,13 +65,15 @@
 
     main {
 
-        &__grid {
-            &--link {
-                background-color: $secondary;
-            }
-
-            &--desc {
-                background-color: $secondary;
+        .main__projects {
+            &__grid {
+                &--link {
+                    background-color: $secondary;
+                }
+    
+                &--desc {
+                    background-color: $secondary;
+                }
             }
         }
 
