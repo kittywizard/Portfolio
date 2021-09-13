@@ -85,12 +85,22 @@
 
         .main__about {
             background-color: $secondary;
+
+            &--headline {
+                color: $primary-font;
+            }
         }
 
         .main__contact {
             .fas,
             .fab {
-                color: $white;
+                @if $theme-name == light {
+                    color: $primary-font;
+                }
+                @else {
+                    color: $white;
+                }
+
 
                 &:hover {
                    color:  $accent-color;
@@ -117,7 +127,7 @@
 }
 }
 
-@mixin theme-typography($primary, $secondary, $primary-font, $secondary-font, $white) {
+@mixin theme-typography($theme-name, $primary, $secondary, $primary-font, $secondary-font, $white) {
     color: $primary-font;
 
    header {
@@ -147,7 +157,12 @@
        &__info {
 
            &--link {
-               color: $white;
+            @if $theme-name == light {
+                color: $primary-font;
+            }
+            @else {
+                color: $white;
+            }
 
            }
        }

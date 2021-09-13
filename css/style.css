@@ -121,7 +121,6 @@ main .main__about--desc {
 .footer__info--link {
   text-align: center;
   text-decoration: none;
-  color: #fff;
 }
 .footer__info--link:hover, .footer__info--link:focus {
   color: #fff;
@@ -558,6 +557,9 @@ main .main__projects__grid--icons .fab:hover:hover {
 .darkmode main .main__about {
   background-color: #4b4b4b;
 }
+.darkmode main .main__about--headline {
+  color: #d6d6d6;
+}
 .darkmode main .main__contact .fas,
 .darkmode main .main__contact .fab {
   color: #fff;
@@ -621,9 +623,12 @@ main .main__projects__grid--icons .fab:hover:hover {
 .lightmode main .main__about {
   background-color: #d6d6d6;
 }
+.lightmode main .main__about--headline {
+  color: #3b3b3b;
+}
 .lightmode main .main__contact .fas,
 .lightmode main .main__contact .fab {
-  color: #fff;
+  color: #3b3b3b;
 }
 .lightmode main .main__contact .fas:hover,
 .lightmode main .main__contact .fab:hover {
@@ -651,7 +656,7 @@ main .main__projects__grid--icons .fab:hover:hover {
   color: #3b3b3b;
 }
 .lightmode .footer__info--link {
-  color: #fff;
+  color: #3b3b3b;
 }
 
 /*# sourceMappingURL=style.css.map */
