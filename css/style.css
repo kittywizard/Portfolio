@@ -329,7 +329,7 @@ main .main__intro__img:hover {
   }
   main .main__intro {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     margin-right: 2em;
   }
@@ -338,8 +338,7 @@ main .main__intro__img:hover {
     width: 80%;
   }
   main .main__intro__img {
-    width: 80%;
-    height: 50%;
+    height: 100%;
     align-self: center;
   }
   main .main__projects--headline {
@@ -589,10 +588,13 @@ main .main__projects__grid--icons .fab:hover:hover {
   color: #d6d6d6;
 }
 .darkmode header nav .nav__link:hover, .darkmode header nav .nav__link:focus {
-  color: #fff;
+  color: #3b3b3b;
 }
 .darkmode main .main__intro__copy--subhead {
   color: #3b3b3b;
+}
+.darkmode main .main__projects__grid--overlay-link {
+  color: #d6d6d6;
 }
 .darkmode .footer__info--link {
   color: #fff;
@@ -655,9 +657,12 @@ main .main__projects__grid--icons .fab:hover:hover {
   color: #3b3b3b;
 }
 .lightmode header nav .nav__link:hover, .lightmode header nav .nav__link:focus {
-  color: #fff;
+  color: #3b3b3b;
 }
 .lightmode main .main__intro__copy--subhead {
+  color: #3b3b3b;
+}
+.lightmode main .main__projects__grid--overlay-link {
   color: #3b3b3b;
 }
 .lightmode .footer__info--link {

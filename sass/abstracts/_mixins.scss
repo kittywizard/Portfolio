@@ -137,7 +137,7 @@
          color: $primary-font;
          &:hover,
          &:focus {
-             color: $white;
+             color: $primary;
          }
      }
  }
@@ -151,6 +151,15 @@
                }
            }
        }
+
+       .main__projects__grid {
+           &--overlay-link{
+                //fix link color here
+                color: $primary-font;
+           }
+        
+       }
+       
    }
 
    .footer {

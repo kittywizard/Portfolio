@@ -39,7 +39,7 @@ main {
 
             .main__intro {
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
                 justify-content: center;
                 margin-right: 2em;
 
@@ -49,11 +49,9 @@ main {
                 }
 
                 &__img {
-                    width: 80%;
-                    height: 50%;
+                    // width: 80%; // no idea why this has to be deleted ??? but now its centered
+                    height: 100%;
                     align-self: center;
-                    // min-width: 200px;
-                    // min-height: 200px;
                 }
 
             }
