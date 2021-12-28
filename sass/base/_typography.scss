@@ -160,5 +160,16 @@ main {
                                 }
                         }
                 }
+
+                .main__about {
+                        &--headline {
+                                //fix weird underline
+
+                                &:after {
+                                        left: 9.5em;
+                                        width: 25%;
+                                }
+                        }
+                }
         }
 }

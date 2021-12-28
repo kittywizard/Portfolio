@@ -132,6 +132,10 @@ main .main__about--desc {
   main .main__intro__copy--subhead {
     padding: 3em 4em;
   }
+  main .main__about--headline:after {
+    left: 9.5em;
+    width: 25%;
+  }
 }
 nav {
   display: flex;
