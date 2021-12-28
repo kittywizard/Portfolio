@@ -51,7 +51,7 @@ main .main__intro__copy--headline {
 }
 main .main__intro__copy--subhead {
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 600;
   margin: 0 auto;
   max-width: fit-content;
   padding: 1em 2em;
@@ -363,6 +363,10 @@ main .main__about__copy {
 }
 
 @media (min-width: 800px) {
+  .main__about--code, .main__about--design {
+    margin-right: 0.75em;
+    max-width: 450px;
+  }
   .main__about__content {
     max-width: 1000px;
     display: flex;
@@ -591,7 +595,7 @@ main .main__projects__grid--icons .fab:hover:hover {
   color: #3b3b3b;
 }
 .darkmode main .main__intro__copy--subhead {
-  color: #3b3b3b;
+  color: #fff;
 }
 .darkmode main .main__projects__grid--overlay-link {
   color: #d6d6d6;
@@ -660,7 +664,7 @@ main .main__projects__grid--icons .fab:hover:hover {
   color: #3b3b3b;
 }
 .lightmode main .main__intro__copy--subhead {
-  color: #3b3b3b;
+  color: #fff;
 }
 .lightmode main .main__projects__grid--overlay-link {
   color: #3b3b3b;

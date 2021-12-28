@@ -20,11 +20,20 @@ main {
 
 @media (min-width: 800px) {
 
-    .main__about__content {
-        max-width: $max-width;
-        // remove this if you add a considerable amount of content
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .main__about {
+
+        &--code,
+        &--design {
+            margin-right: 0.75em;
+            max-width: 450px;
+        }
+
+        &__content {
+            max-width: $max-width;
+            // remove this if you add a considerable amount of content
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 }
