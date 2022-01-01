@@ -9,14 +9,18 @@ main {
             grid-template: repeat(2, 1fr) / repeat(auto-fit, minmax(200px, 1fr)); //rows / columns (need the slash in there)
             max-width: 800px;
 
+            &--item {
+                
+            }
+
             &--link {
                 overflow: hidden;
-                max-height: 200px;
-                max-width: 200px;
+                max-height: $max-overlay-width;
+                max-width: $max-overlay-width;
             }
 
             &--img {
-                max-height: 200px;
+                max-height: $max-overlay-width;
                 object-fit: cover;
                 
                 transition: 
@@ -38,12 +42,20 @@ main {
                 top: 0px;
                 left: 0px;
                 z-index: 1;
-                max-width: 200px;
+                max-width: $max-overlay-width;
 
             }
-
-            
         }
     }
 
+}
+
+@media (min-width:800px) {
+
+    .main__projects {
+
+        &__grid {
+            //need to have adjustments for desktop probably
+        }
+    }
 }

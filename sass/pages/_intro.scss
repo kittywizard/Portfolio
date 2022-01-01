@@ -8,7 +8,18 @@ main {
     .main__intro {
         display: flex;
         justify-content: space-between;
+        // display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        // grid-template-rows: repeat(1, 1fr);
+        // grid-template-areas: 'copy image'
+        //                     'copy copy';
+
         @include margins;
+
+        &__copy {
+            display: grid;
+        }
+
 
         &__img {
             background-image: url('/svg/me-white.svg');
@@ -16,6 +27,7 @@ main {
             background-size: contain;
             content: '';
             width: 40%;
+            grid-template: 'image';
 
             &:hover {
                 background-image: url('/svg/me-hover_white.svg');
