@@ -54,7 +54,7 @@ main .main__intro__copy--subhead {
   font-weight: 600;
   margin: 0 auto;
   max-width: fit-content;
-  padding: 1em 2em;
+  padding: 1.5em 2em;
   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
   background-color: #3ba6d7;
 }
@@ -308,12 +308,16 @@ main .main__intro {
   width: 90%;
   margin: 0 auto;
 }
+main .main__intro__copy {
+  display: grid;
+}
 main .main__intro__img {
   background-image: url("/svg/me-white.svg");
   background-repeat: no-repeat;
   background-size: contain;
   content: "";
   width: 40%;
+  grid-template: "image";
 }
 main .main__intro__img:hover {
   background-image: url("/svg/me-hover_white.svg");
