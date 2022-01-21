@@ -596,7 +596,7 @@ main .main__projects__grid--icons .fab:hover:hover {
   color: #d6d6d6;
 }
 .darkmode header nav .nav__link:hover, .darkmode header nav .nav__link:focus {
-  color: #3b3b3b;
+  color: #d6d6d6;
 }
 .darkmode main .main__intro__copy--subhead {
   color: #fff;
@@ -665,7 +665,7 @@ main .main__projects__grid--icons .fab:hover:hover {
   color: #3b3b3b;
 }
 .lightmode header nav .nav__link:hover, .lightmode header nav .nav__link:focus {
-  color: #3b3b3b;
+  color: #4b4b4b;
 }
 .lightmode main .main__intro__copy--subhead {
   color: #fff;
