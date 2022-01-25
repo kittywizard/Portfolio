@@ -9,10 +9,6 @@ main {
             grid-template: repeat(2, 1fr) / repeat(auto-fit, minmax(200px, 1fr)); //rows / columns (need the slash in there)
             max-width: 800px;
 
-            &--item {
-                
-            }
-
             &--link {
                 overflow: hidden;
                 max-height: $max-overlay-width;

@@ -21,6 +21,7 @@ function closeNav() {
 //creates the modal click on / off 
 const links = document.querySelectorAll('.main__projects__grid--link'); //the image itself
 const desc = document.querySelectorAll('.main__projects__grid--desc'); // the description modal
+
 links.forEach((link, index) => {
     link.addEventListener('click', () => {
 
@@ -28,6 +29,7 @@ links.forEach((link, index) => {
        links[index].classList.toggle('hidden');
     }); 
 });
+
 desc.forEach((modal, index) => {
     modal.addEventListener('click', () => {
 
@@ -35,14 +37,6 @@ desc.forEach((modal, index) => {
         links[index].classList.toggle('hidden');
     });
 });
-
-//** figure out which ones aren't necessary, later */
-const nav = document.querySelector('.nav');
-const main = document.querySelector("main");
-const header = document.getElementById('header');
-const body = document.getElementById('body');
-const li = document.querySelectorAll('.nav__item');
-
 
 /* DARK/LIGHT MODE TOGGLE */
 
@@ -69,11 +63,5 @@ function changeMode() {
     toggleBtn.classList.toggle('toggled');
     lighten.classList.toggle('unselected');
     darken.classList.toggle('unselected');
-    
-    // switchClass(nav, )
 }
 
-// function switchClass(element, classRemove, classAdd) {
-//     element.classList.toggle(classRemove);
-//     element.classList.toggle(classAdd);
-// }

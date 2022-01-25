@@ -6,14 +6,14 @@ main {
         &--icons {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
         }
 
         .fas,
         .fab {
-            padding: 0 0.25em;
+            padding: 0 0.35em;
             margin-top: 0.5em;
-            font-size: 4rem;
+            font-size: 2.5rem;
             @include center;
 
             &:hover {
